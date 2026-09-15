@@ -10,7 +10,7 @@ if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
 
-const filesToCopy = ['styles.css', 'script.js', 'aula-01-mentoria-trafego.pdf'];
+const filesToCopy = ['index.html', 'styles.css', 'script.js', 'aula-01-mentoria-trafego.pdf'];
 for (const file of filesToCopy) {
   const src = path.join(__dirname, file);
   const dest = path.join(publicDir, file);
