@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Aula 01 da Mentoria de Tráfego do Arthur: criativos, públicos, métricas e otimização para negócios locais.">
+  <meta name="theme-color" content="#171717">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mentoria de Tráfego | Aula 01</title>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início"><span>ARTHUR</span><i></i></a>
+    <nav aria-label="Navegação da aula">
+      <button class="menu-button" aria-expanded="false" aria-controls="menu">Conteúdo <span>+</span></button>
+      <div class="menu" id="menu">
+        <a href="#mapa">Mapa</a><a href="#criativos">Criativos</a><a href="#estrutura">Estrutura</a><a href="#metricas">Métricas</a><a href="#tarefas">Prática</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero dark" id="inicio">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-inner reveal">
+        <div class="eyebrow"><span>MENTORIA DE TRÁFEGO</span><span>AULA 01</span></div>
+        <p class="kicker">CRIATIVOS • CAMPANHAS • MÉTRICAS</p>
+        <h1>TRÁFEGO QUE<br><em>VIRA DECISÃO.</em></h1>
+        <p class="lead">Como estruturar campanhas locais, testar com método e ler os sinais que realmente aproximam anúncio e venda.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#mapa">Começar a aula <span>↓</span></a>
+          <div class="lesson-meta"><strong>11 SET 2026</strong><span>Leitura de 18 min</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper intro" id="mapa">
+      <div class="section-head reveal"><span class="number">01</span><div><p class="label">VISÃO DA AULA</p><h2>O mapa antes<br>do gerenciador.</h2></div></div>
+      <div class="intro-grid">
+        <blockquote class="reveal">“O gerenciador distribui.<br><strong>O criativo convence.</strong>”</blockquote>
+        <div class="copy reveal"><p>Esta aula transforma uma configuração prática de campanha em um processo repetível para negócios locais. A lógica é simples: escolha uma oferta clara, organize testes controlados e só então tome decisões pelos dados.</p><p class="note">Não existe configuração mágica. Existe clareza de hipótese, tempo suficiente para o teste e disciplina para não mudar tudo ao mesmo tempo.</p></div>
+      </div>
+      <div class="chapter-strip reveal" aria-label="Capítulos da aula">
+        <span>01 Criativos</span><span>02 Estrutura</span><span>03 Públicos</span><span>04 Métricas</span><span>05 Otimização</span><span>06 Prática</span>
+      </div>
+    </section>
+
+    <section class="dark module" id="criativos">
+      <div class="section-head reveal"><span class="number">02</span><div><p class="label">CRIATIVOS E OFERTA</p><h2>O anúncio carrega<br>a maior parte do resultado.</h2></div></div>
+      <div class="principle reveal"><span>PRINCÍPIO CENTRAL</span><p>Nenhuma estratégia de tráfego salva um criativo comum, confuso ou já saturado.</p></div>
+      <div class="cards three">
+        <article class="card reveal"><b>01</b><h3>Comece pelo carro-chefe</h3><p>Para uma empresa ainda pouco conhecida, uma oferta específica comunica melhor do que divulgar vários procedimentos ao mesmo tempo.</p></article>
+        <article class="card reveal"><b>02</b><h3>CTA sem ambiguidade</h3><p>Mostre o próximo passo: chamar no WhatsApp, solicitar condição ou agendar avaliação. Clareza reduz abandono.</p></article>
+        <article class="card reveal"><b>03</b><h3>Adapte cada formato</h3><p>Feed e stories exigem enquadramentos diferentes. Reposicione vídeo e legenda para que nada importante seja cortado.</p></article>
+      </div>
+      <div class="compare reveal">
+        <div><span>CRIATIVO CURTO</span><strong>19s</strong><p>Maior volume e tendência de lead mais barato. Use uma dor direta e uma ação simples.</p></div>
+        <div class="versus">×</div>
+        <div><span>CRIATIVO LONGO</span><strong>40–49s</strong><p>Menor volume, porém pode pré-qualificar melhor quem permanece até a oferta.</p></div>
+      </div>
+      <p class="closing-line reveal">O vencedor não é o vídeo mais curto ou mais bonito. <strong>É o que produz retorno financeiro.</strong></p>
+    </section>
+
+    <section class="paper module" id="estrutura">
+      <div class="section-head reveal"><span class="number">03</span><div><p class="label">ESTRUTURA DA CAMPANHA</p><h2>Teste uma variável<br>de cada vez.</h2></div></div>
+      <div class="funnel reveal">
+        <div><span>1</span><small>NÍVEL 01</small><strong>Campanha</strong><p>Objetivo: iniciar conversas.</p></div>
+        <i>→</i>
+        <div><span>2</span><small>NÍVEL 02</small><strong>Conjunto</strong><p>Público, verba e posicionamento.</p></div>
+        <i>→</i>
+        <div><span>3</span><small>NÍVEL 03</small><strong>Anúncio</strong><p>Vídeo, texto e chamada.</p></div>
+      </div>
+      <div class="split">
+        <article class="dark-card reveal"><p class="label">CONFIGURAÇÃO DA AULA</p><h3>3 conjuntos × R$ 10/dia</h3><ul><li>Conjunto 1: direcionamento Advantage+</li><li>Conjunto 2: interesses locais controlados</li><li>Conjunto 3: mesma base, público feminino</li></ul></article>
+        <article class="outline-card reveal"><p class="label">REGRA DE TESTE</p><h3>Primeiro conjuntos.<br>Depois criativos.</h3><p>Se várias coisas mudam juntas, você perde a causa do resultado. Deixe a campanha respirar por 2 a 3 dias antes da primeira leitura.</p></article>
+      </div>
+    </section>
+
+    <section class="dark module audience" id="publicos">
+      <div class="section-head reveal"><span class="number">04</span><div><p class="label">PÚBLICOS E POSICIONAMENTOS</p><h2>Direcione sem<br>estrangular o algoritmo.</h2></div></div>
+      <div class="audience-grid">
+        <div class="radar reveal"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="dot d1"></div><div class="dot d2"></div><div class="dot d3"></div><span>5 KM</span></div>
+        <div class="stack">
+          <article class="row-card reveal"><b>A</b><div><h3>Advantage+</h3><p>O Meta interpreta o anúncio e distribui entre os usuários com maior chance de responder. É uma hipótese ampla, não ausência de estratégia.</p></div></article>
+          <article class="row-card reveal"><b>B</b><div><h3>Interesses</h3><p>Use poucos sinais coerentes, como cuidados com a pele e salão de beleza. Excesso de filtros confunde e encarece a entrega.</p></div></article>
+          <article class="row-card reveal"><b>C</b><div><h3>Posicionamentos</h3><p>Comece com Advantage+ entre Instagram, Facebook, WhatsApp e rede disponível; restrinja apenas quando os dados justificarem.</p></div></article>
+        </div>
+      </div>
+      <div class="warning reveal"><span>EVITE</span><p>Combinações que reduzem o público a cerca de 15 mil pessoas — como empilhar interesses, comportamento de viagem e aparelho — podem levar o CPM ao teto sem melhorar a qualificação.</p></div>
+    </section>
+
+    <section class="paper module" id="metricas">
+      <div class="section-head reveal"><span class="number">05</span><div><p class="label">LEITURA DE MÉTRICAS</p><h2>Dados são sinais.<br>Venda é o veredito.</h2></div></div>
+      <div class="metric-grid">
+        <article class="metric reveal"><span>CTR DE SAÍDA</span><strong>≥ 1%</strong><p>Referência inicial para avaliar a capacidade do criativo de gerar interesse.</p></article>
+        <article class="metric highlight reveal"><span>FREQUÊNCIA</span><strong>&lt; 2,5–3</strong><p>Em campanhas de mensagens, repetição excessiva tende a elevar o custo por lead.</p></article>
+        <article class="metric reveal"><span>RELAÇÃO SAUDÁVEL</span><strong>3 : 1</strong><p>Aproximadamente três cliques no link para cada conversa iniciada.</p></article>
+        <article class="metric reveal"><span>CASO ANALISADO</span><strong>R$ 6</strong><p>Custo aproximado por conversa em uma campanha com 40 mensagens iniciadas.</p></article>
+      </div>
+      <div class="dashboard reveal">
+        <div><small>PAINEL ESSENCIAL</small><h3>Personalize as colunas</h3><p>Frequência · CTR de saída · CTR único · conversas iniciadas · CPM · custo por lead</p></div>
+        <div class="bars" aria-hidden="true"><i style="--w:86%"></i><i style="--w:62%"></i><i style="--w:74%"></i><i style="--w:43%"></i></div>
+      </div>
+      <p class="note wide reveal">Confira sempre o intervalo de datas. Uma leitura com período errado produz uma decisão tecnicamente correta sobre dados que não representam a campanha atual.</p>
+    </section>
+
+    <section class="dark module" id="otimizacao">
+      <div class="section-head reveal"><span class="number">06</span><div><p class="label">OTIMIZAÇÃO</p><h2>Não mate o que funciona.<br>Não dependa só disso.</h2></div></div>
+      <div class="timeline reveal">
+        <div><span>DIA 0</span><strong>Publicar</strong><p>Configuração limpa, nomenclatura clara e pagamento ativo.</p></div>
+        <div><span>DIAS 1–2</span><strong>Observar</strong><p>Evite alterações impulsivas durante a coleta inicial.</p></div>
+        <div><span>DIA 3</span><strong>Comparar</strong><p>Leia custo, qualidade e retorno por conjunto.</p></div>
+        <div><span>CONTÍNUO</span><strong>Renovar</strong><p>Produza novos criativos antes que o vencedor sature.</p></div>
+      </div>
+      <div class="quote reveal"><span>80/20</span><p>A maior parte da performance nasce na força da mensagem e do criativo. A configuração dá condições para essa força aparecer.</p></div>
+      <div class="cards two">
+        <article class="card reveal"><h3>Barreiras de conversão</h3><p>Interesse, segurança, clareza, procrastinação e fechamento. Se há muitos cliques e poucas conversas, investigue a promessa e o destino.</p></article>
+        <article class="card reveal"><h3>Preço e confiança</h3><p>Evite condições que pareçam esconder o valor real. Transparência pré-qualifica e protege a credibilidade da oferta.</p></article>
+      </div>
+    </section>
+
+    <section class="paper module practice" id="tarefas">
+      <div class="section-head reveal"><span class="number">07</span><div><p class="label">APLICAÇÃO PRÁTICA</p><h2>Saia da aula<br>com evidência.</h2></div></div>
+      <div class="task-list">
+        <article class="task reveal"><span>01</span><div><h3>Estude seis anúncios validados</h3><p>Pesquise negócios de estética em cidades semelhantes a Betim. Escolha vídeos ativos há 1–2 meses e registre o link e o motivo de cada escolha.</p></div><b>WENDER</b></article>
+        <article class="task reveal"><span>02</span><div><h3>Recrie a campanha do zero</h3><p>Monte os três conjuntos conforme a aula, mas mantenha tudo em rascunho. O objetivo é provar domínio da estrutura.</p></div><b>WENDER</b></article>
+        <article class="task reveal"><span>03</span><div><h3>Prepare a veiculação</h3><p>Adicione a forma de pagamento, confira datas, orçamento, CTA, formatos e posicionamentos antes de ativar.</p></div><b>CHECKLIST</b></article>
+        <article class="task reveal"><span>04</span><div><h3>Monitore sem interferir cedo</h3><p>Acompanhe as métricas por 2–3 dias e leve para a próxima aula uma leitura do que aconteceu — sem mudar várias variáveis.</p></div><b>DADOS</b></article>
+      </div>
+    </section>
+
+    <section class="download dark" id="download">
+      <div class="download-inner reveal">
+        <p class="label">MATERIAL DE APOIO • AULA 01</p>
+        <h2>Leve a aula<br>com você.</h2>
+        <p>O PDF reúne os princípios, referências numéricas, estrutura de campanha e tarefas práticas em um formato otimizado para leitura e impressão.</p>
+        <a class="button primary download-button" href="assets/aula-01-mentoria-trafego.pdf" download><span>Baixar PDF da aula</span><b>↓</b></a>
+      </div>
+      <footer><a class="brand" href="#inicio"><span>ARTHUR</span><i></i></a><p>Mentoria de Tráfego · Aula 01 · 2026</p></footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
