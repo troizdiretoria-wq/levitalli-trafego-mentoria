@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 2 — Criativos • Mentoria de Tráfego Pago Levitalli</title>
+  <meta name="description" content="Aula 2 de Tráfego Pago Levitalli: Otimização sem mexer na estrutura, qualidade de leads reais, diagnóstico completo, pesquisa na Biblioteca de Anúncios, modelagem, UGC e ElevenLabs.">
+  <meta property="og:title" content="Aula 2 — Criativos • Mentoria de Tráfego Pago Levitalli">
+  <meta property="og:description" content="Guia prático da Aula 2: análise de métricas, CTR, frequência, criação de anúncios UGC e narrados por IA com ElevenLabs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Progress Indicator -->
+  <div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+  <!-- STICKY TOPBAR HEADER -->
+  <header class="topbar" id="appHeader">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início da aula" id="brandLogo">
+      <span>LEVITALLI</span><i></i><small>Tráfego Pago</small>
+    </a>
+    <nav aria-label="Navegação da aula">
+      <button class="menu-button" aria-expanded="false" aria-controls="menu" id="menuToggleBtn">
+        Menu <span>+</span>
+      </button>
+      <div class="menu" id="menu">
+        <button class="menu-aulas-link" id="navLinkAulas" type="button" data-open-aulas aria-haspopup="dialog" aria-expanded="false" aria-label="Abrir catálogo de aulas">
+          <span>Aulas</span> <span class="aulas-badge">2</span> <i class="aulas-arrow">▼</i>
+        </button>
+        <a href="#modulo-otimizacao" id="navLinkOtimizacao">Otimização</a>
+        <a href="#modulo-diagnostico" id="navLinkDiagnostico">Diagnóstico</a>
+        <a href="#modulo-pesquisa" id="navLinkPesquisa">Pesquisa & Modelagem</a>
+        <a href="#modulo-producao" id="navLinkProducao">UGC & IA</a>
+        <a href="#modulo-estrategia" id="navLinkEstrategia">Comercial & Decisão</a>
+        <a href="#modulo-tarefas" id="navLinkTarefas">Tarefas</a>
+        <a class="cta-link" href="#modulo-sintese" id="navLinkSintese">10 Princípios</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <!-- HERO SECTION -->
+    <section class="hero dark" id="inicio">
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <div class="eyebrow">
+          <span>AULA 02 DE TRÁFEGO PAGO • CASO LEVITALLI</span>
+          <span>MENTORIA DE TRÁFEGO</span>
+        </div>
+        <p class="kicker">OTIMIZAÇÃO • QUALIDADE DE LEADS • PESQUISA • UGC • ELEVENLABS</p>
+        <h1>AULA 2 —<br><em>CRIATIVOS.</em></h1>
+        
+        <div class="callout-box" style="margin: 28px 0 34px; padding: 28px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-left: 4px solid var(--orange); border-radius: 8px;">
+          <h2 class="label" style="margin-top:0; color:var(--orange); font-size: 0.95rem; letter-spacing: 0.08em;">Objetivo da aula</h2>
+          <p class="lead" style="margin-bottom: 14px; font-size: 1.15rem; color: #fff;">
+            Nesta aula, o foco foi entender que otimizar uma campanha não significa necessariamente alterar público, orçamento ou configurações dentro do Meta Ads.
+          </p>
+          <p style="margin: 0 0 14px; color: #c4beaf; font-size: 1rem; line-height: 1.65;">
+            Às vezes, a melhor otimização é não mexer na campanha naquele momento, deixar os dados amadurecerem e trabalhar na criação de novos anúncios.
+          </p>
+          <p style="margin: 0; color: #c4beaf; font-size: 1rem; line-height: 1.65;">
+            No cenário analisado, a campanha já havia gerado leads, porém o volume ainda era pequeno e o custo estava elevado. Por isso, a decisão foi manter a estrutura rodando e concentrar os esforços na renovação dos criativos.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#modulo-otimizacao" id="heroBtnComecar">
+            <span>Começar Aula 2</span> <b>↓</b>
+          </a>
+          <a class="button outline" href="#modulo-diagnostico" id="heroBtnDiagnostico">
+            <span>Ver Diagnóstico da Campanha</span>
+          </a>
+          <button type="button" class="button outline" data-open-aulas style="cursor:pointer;">
+            <span>Trocar de Aula ❖</span>
+          </button>
+          <div class="lesson-meta">
+            <strong>MENTORIA ARTHUR • LEVITALLI</strong>
+            <span>Aula 2 • Criativos • 21 Tópicos & Tarefas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Nav Strip -->
+      <div class="chapter-strip reveal" aria-label="Navegação por capítulos">
+        <a href="#modulo-otimizacao">I. Otimização (1–3)</a>
+        <a href="#modulo-diagnostico">II. Diagnóstico (4–8)</a>
+        <a href="#modulo-pesquisa">III. Pesquisa (9–12)</a>
+        <a href="#modulo-producao">IV. UGC & IA (13–17)</a>
+        <a href="#modulo-estrategia">V. Comercial (18–21)</a>
+        <a href="#modulo-tarefas">VI. Prática & Síntese</a>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO I: OTIMIZAÇÃO & AMOSTRAGEM (Tópicos 1 a 3) -->
+    <section class="paper module" id="modulo-otimizacao">
+      <div class="section-head reveal">
+        <span class="number">CAP. I</span>
+        <div>
+          <p class="label">OTIMIZAÇÃO & AMOSTRAGEM</p>
+          <h2>O Que Significa Otimizar<br>e a Leitura de Qualidade.</h2>
+          <p class="subtitle">Por que otimizar nem sempre é mexer no Gerenciador e como avaliar os primeiros dados com paciência estratégica.</p>
+        </div>
+      </div>
+
+      <div class="learnings-stack">
+        <!-- Item 01 -->
+        <article class="learning-card reveal" id="aprendizado-01">
+          <div class="learning-header">
+            <span class="learning-index">01</span>
+            <h3>1. O que significa otimizar?</h3>
+            <span class="learning-badge">Conceito Fundamental</span>
+          </div>
+          <div class="learning-body">
+            <p>Um erro comum é pensar:</p>
+            <div class="quote" style="margin: 16px 0; background: #fff; border-color: var(--paper-border); border-left-color: var(--orange);">
+              <strong style="color: var(--ink); font-size: 1.15rem; display: block;">“Otimizar = entrar no Gerenciador e mudar alguma configuração.”</strong>
+            </div>
+            <p>Mas não necessariamente.</p>
+            <p>Uma otimização pode significar:</p>
+            <p style="font-weight: 700; color: var(--ink);">
+              Alterar público → alterar posicionamento → alterar orçamento → trocar oferta → criar novos criativos → ou simplesmente aguardar mais dados.
+            </p>
+            <div class="flow-strip">
+              <span class="flow-step">Alterar público</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">alterar posicionamento</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">alterar orçamento</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">trocar oferta</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">criar novos criativos</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step" style="border-color: var(--orange); color: var(--ink); font-weight: 800;">ou simplesmente aguardar mais dados.</span>
+            </div>
+            <p>
+              Durante a aula, foi decidido não fazer alterações imediatas nos conjuntos, porque a campanha ainda possuía pouca amostragem. A otimização escolhida foi trabalhar nos criativos.
+            </p>
+            <div class="callout-box" style="margin-top: 24px;">
+              <p><strong style="color: var(--orange); font-size: 1.05rem; display: block; margin-bottom: 6px;">Princípio importante</strong></p>
+              <p style="font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px;">
+                Não altere uma campanha apenas porque você sente que precisa fazer alguma coisa.
+              </p>
+              <p style="color: #444; margin: 0;">
+                Primeiro encontre onde está o problema. Depois altere a variável relacionada a ele.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 02 -->
+        <article class="learning-card reveal" id="aprendizado-02">
+          <div class="learning-header">
+            <span class="learning-index">02</span>
+            <h3>2. Primeiro analisamos a qualidade dos leads</h3>
+            <span class="learning-badge">Comercial & Vendas</span>
+          </div>
+          <div class="learning-body">
+            <p>A campanha havia gerado três contatos reais naquele momento:</p>
+            <p style="font-size: 1.15rem; font-weight: 800; color: var(--ink); margin: 8px 0 14px;">
+              Tatielle, Sara e Kelly.
+            </p>
+            <p>
+              Apesar do custo por lead elevado, os contatos apresentavam sinais interessantes de qualidade. Uma das pessoas já tinha uma sessão experimental agendada e outra procurava uma solução depois de uma experiência anterior frustrada.
+            </p>
+            <p>Isso trouxe um aprendizado importante:</p>
+            <div class="callout-box">
+              <p><strong style="color: var(--orange); font-size: 1.15rem; display: block; margin-bottom: 8px;">Lead barato não é necessariamente lead bom</strong></p>
+              <p>O objetivo final não é simplesmente conseguir o menor CPL possível.</p>
+              <p style="margin-top: 10px;">O que interessa é:</p>
+              <p style="font-size: 1.05rem; font-weight: 800; color: var(--ink); margin: 10px 0 14px;">
+                Lead → atendimento → agendamento → comparecimento → venda → faturamento.
+              </p>
+              <div class="flow-strip" style="margin: 14px 0;">
+                <span class="flow-step">Lead</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">atendimento</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">agendamento</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">comparecimento</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">venda</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 900;">faturamento.</span>
+              </div>
+              <p style="font-weight: 700; color: var(--ink); margin: 0;">
+                Portanto, custo por lead precisa sempre ser analisado junto com qualidade e capacidade de conversão.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 03 -->
+        <article class="learning-card reveal" id="aprendizado-03">
+          <div class="learning-header">
+            <span class="learning-index">03</span>
+            <h3>3. Amostragem: não tomar decisões cedo demais</h3>
+            <span class="learning-badge">Estatística & Paciência</span>
+          </div>
+          <div class="learning-body">
+            <p>Com apenas alguns contatos, ainda não existe volume suficiente para declarar com segurança:</p>
+            <div class="split" style="gap: 14px; margin: 16px 0;">
+              <div style="padding: 14px 18px; background: #fff; border-left: 3px solid #ef4444; border-radius: 4px; font-weight: 700; color: var(--ink);">
+                “Esse público é ruim.”
+              </div>
+              <div style="padding: 14px 18px; background: #fff; border-left: 3px solid #22c55e; border-radius: 4px; font-weight: 700; color: var(--ink);">
+                “Esse anúncio é o vencedor.”
+              </div>
+            </div>
+            <p>Quanto maior a quantidade de dados, maior nossa capacidade de identificar padrões reais.</p>
+            <div class="callout-box" style="background: rgba(243, 154, 22, 0.08); border-left: 3px solid var(--orange);">
+              <p style="font-weight: 700; color: var(--ink); margin: 0;">
+                Por isso, a campanha precisava continuar rodando antes de uma alteração estrutural. A orientação da aula foi acumular mais dados enquanto os novos criativos eram produzidos.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO II: DIAGNÓSTICO, MÉTRICAS & DADOS (Tópicos 4 a 8) -->
+    <section class="dark module" id="modulo-diagnostico">
+      <div class="section-head reveal">
+        <span class="number">CAP. II</span>
+        <div>
+          <p class="label">LEITURA COMBINADA DE DADOS</p>
+          <h2>4. Diagnóstico da Campanha<br>e Leitura das Variáveis.</h2>
+          <p class="subtitle">A correlação entre cliques, conversão pós-clique, CTR e frequência observada no Gerenciador.</p>
+        </div>
+      </div>
+
+      <div class="learnings-stack">
+        <!-- Item 04: Diagnóstico -->
+        <article class="learning-card reveal" id="aprendizado-04">
+          <div class="learning-header">
+            <span class="learning-index">04</span>
+            <h3>4. Diagnóstico da campanha</h3>
+            <span class="learning-badge">Painel da Aula</span>
+          </div>
+          <div class="learning-body">
+            <p>Na análise realizada durante a aula, alguns números chamaram atenção:</p>
+            
+            <!-- TABELA DE DIAGNÓSTICO -->
+            <div class="diagnosis-table-wrapper" style="margin: 20px 0 28px;">
+              <table class="diagnosis-table">
+                <thead>
+                  <tr>
+                    <th>Métrica</th>
+                    <th>Resultado observado</th>
+                    <th>Leitura na aula</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="metric-name">Cliques no link</td>
+                    <td class="metric-val">27</td>
+                    <td>Houve interesse inicial</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">Mensagens reais</td>
+                    <td class="metric-val">3</td>
+                    <td>Conversão pós-clique baixa</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">CTR</td>
+                    <td class="metric-val">~0,40%</td>
+                    <td>Abaixo da referência usada na mentoria</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">Frequência</td>
+                    <td class="metric-val">~1,53</td>
+                    <td>Ainda saudável</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">Alcance</td>
+                    <td class="metric-val">~4.400</td>
+                    <td>Público ainda não saturado</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">Impressões</td>
+                    <td class="metric-val">~6.700</td>
+                    <td>Volume inicial de entrega</td>
+                  </tr>
+                  <tr>
+                    <td class="metric-name">CPM</td>
+                    <td class="metric-val">~R$14,60</td>
+                    <td>Não identificado como principal gargalo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="callout-box" style="margin-top: 24px;">
+              <p><strong style="color: var(--orange); font-size: 1.05rem; display: block; margin-bottom: 8px;">O principal problema identificado foi:</strong></p>
+              <p style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 8px;">
+                Muitas pessoas clicavam, mas poucas realmente iniciavam uma conversa.
+              </p>
+              <p style="margin-bottom: 8px;">Foram aproximadamente:</p>
+              <p style="font-size: 1.1rem; font-weight: 800; color: var(--orange); margin: 8px 0;">27 cliques → 3 mensagens reais</p>
+              <div class="flow-strip" style="margin: 12px 0;">
+                <span class="flow-step">27 cliques</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 900;">3 mensagens reais</span>
+              </div>
+              <p style="color: #d1ccbf; margin: 0;">
+                Na metodologia usada na aula, buscou-se como referência algo próximo de 3 a 4 cliques para gerar uma conversa, enquanto a campanha estava muito acima dessa relação.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 05: CTR -->
+        <article class="learning-card reveal" id="aprendizado-05">
+          <div class="learning-header">
+            <span class="learning-index">05</span>
+            <h3>5. CTR: um dos principais sinais de criativo</h3>
+            <span class="learning-badge">Indicador Central</span>
+          </div>
+          <div class="learning-body">
+            <p>CTR significa Click Through Rate, ou taxa de cliques.</p>
+            <p>De maneira simples:</p>
+            <div class="quote" style="margin: 14px 0; background: rgba(255,255,255,0.03); border-color: var(--line); border-left-color: var(--orange);">
+              <strong style="color: #fff; font-size: 1.1rem; display: block;">De todas as pessoas que visualizaram o anúncio, quantas clicaram?</strong>
+            </div>
+            <p>
+              Durante a aula foi utilizada como referência inicial uma taxa próxima de 1%, embora tenha sido reforçado que CTR não deve ser analisado sozinho e que o faturamento continua sendo o objetivo final.
+            </p>
+            <p>Exemplo:</p>
+            <div class="split" style="gap: 14px; margin: 16px 0;">
+              <div style="padding: 16px 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px;">
+                <p style="margin: 0; font-weight: 700; color: #fff;">1.000 impressões + CTR de 0,5% = aproximadamente 5 cliques</p>
+              </div>
+              <div style="padding: 16px 20px; background: rgba(243, 154, 22, 0.08); border: 1px solid rgba(243, 154, 22, 0.3); border-radius: 6px;">
+                <p style="margin: 0; font-weight: 700; color: var(--orange);">1.000 impressões + CTR de 1% = aproximadamente 10 cliques</p>
+              </div>
+            </div>
+            <p style="color: #fff; font-weight: 600; margin: 0;">
+              A campanha apresentava CTR baixo. Isso foi um dos sinais de que os criativos precisavam ser renovados.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 06: Públicos -->
+        <article class="learning-card reveal" id="aprendizado-06">
+          <div class="learning-header">
+            <span class="learning-index">06</span>
+            <h3>6. Por que não mexemos nos públicos?</h3>
+            <span class="learning-badge">Isolamento de Variáveis</span>
+          </div>
+          <div class="learning-body">
+            <p>A estrutura inicial havia sido construída com uma lógica de teste:</p>
+            <p style="font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 14px;">
+              mesmos anúncios + conjuntos diferentes + mudança principalmente de público.
+            </p>
+            <p>Isso permite isolar variáveis.</p>
+            <p>Imagine que fossem alterados ao mesmo tempo:</p>
+            <p style="font-size: 1rem; font-weight: 700; color: var(--orange); margin-bottom: 14px;">
+              público + criativo + posicionamento + idade + orçamento.
+            </p>
+            <p>
+              Se o resultado melhorasse, seria difícil saber qual mudança causou a melhora. Por manter os mesmos criativos enquanto os públicos eram testados, tornou-se mais fácil diagnosticar onde poderia estar o problema.
+            </p>
+            <div class="callout-box">
+              <p><strong style="color: var(--orange); display: block; margin-bottom: 6px;">Regra da mentoria</strong></p>
+              <p style="font-size: 1.1rem; font-weight: 800; color: #fff; margin: 0;">
+                Quanto mais controlado for o teste, mais fácil será entender o que realmente funcionou.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 07: Frequência -->
+        <article class="learning-card reveal" id="aprendizado-07">
+          <div class="learning-header">
+            <span class="learning-index">07</span>
+            <h3>7. Frequência: quantas vezes o anúncio está sendo visto?</h3>
+            <span class="learning-badge">Métrica de Controle</span>
+          </div>
+          <div class="learning-body">
+            <div class="split" style="gap: 16px; margin-bottom: 16px;">
+              <div style="padding: 18px 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px;">
+                <strong style="color: var(--orange); font-size: 1.05rem;">Alcance</strong>
+                <p style="margin: 6px 0 0; color: #d1ccbf; font-size: 0.95rem;">= quantidade de pessoas diferentes atingidas.</p>
+              </div>
+              <div style="padding: 18px 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px;">
+                <strong style="color: var(--orange); font-size: 1.05rem;">Impressões</strong>
+                <p style="margin: 6px 0 0; color: #d1ccbf; font-size: 0.95rem;">= quantidade total de vezes que o anúncio apareceu.</p>
+              </div>
+            </div>
+            <div style="padding: 18px 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px; margin-bottom: 16px;">
+              <p class="label" style="margin-top:0;">Exemplo</p>
+              <p style="margin: 0 0 8px; color: #d1ccbf; font-size: 1rem;">Uma pessoa viu o anúncio duas vezes:</p>
+              <p style="margin: 0; font-weight: 700; color: #fff;">Alcance = 1 • Impressões = 2</p>
+              <p style="margin: 12px 0 0; color: #d1ccbf; font-size: 1rem;">A frequência representa a média: <strong>Impressões ÷ alcance</strong></p>
+            </div>
+            <p>
+              Na campanha, a frequência estava aproximadamente em 1,53, portanto ainda não havia um sinal forte de saturação.
+            </p>
+            <p style="color: #bcb7ad; margin: 0;">
+              Uma frequência crescente pode indicar que as mesmas pessoas estão sendo expostas repetidamente ao anúncio. Com o tempo, isso pode contribuir para fadiga criativa.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 08: Conclusão do Diagnóstico -->
+        <article class="learning-card reveal" id="aprendizado-08" style="border: 2px solid var(--orange); background: #1a1a1a;">
+          <div class="learning-header">
+            <span class="learning-index">08</span>
+            <h3>8. Conclusão do diagnóstico</h3>
+            <span class="learning-badge" style="background: var(--orange); color: var(--ink);">Decisão Imediata</span>
+          </div>
+          <div class="learning-body">
+            <p style="font-size: 1.05rem; color: #d1ccbf; margin-bottom: 16px;">
+              Ao cruzar as métricas, a leitura da aula foi:
+            </p>
+            <ul class="bullet-list" style="margin: 0 0 20px;">
+              <li><strong style="color: #fff;">Frequência:</strong> não era o principal problema.</li>
+              <li><strong style="color: #fff;">Entrega:</strong> estava acontecendo.</li>
+              <li><strong style="color: #fff;">CTR:</strong> baixo.</li>
+              <li><strong style="color: #fff;">Cliques → mensagens:</strong> abaixo do desejado.</li>
+            </ul>
+            <div class="callout-box" style="background: rgba(243, 154, 22, 0.15); border-left: 4px solid var(--orange); margin: 0;">
+              <p style="font-size: 1.15rem; font-weight: 900; color: #ffffff;">
+                Consequentemente: A próxima otimização deveria acontecer nos criativos.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO III: PESQUISA & ENGENHARIA REVERSA (Tópicos 9 a 12) -->
+    <section class="paper module" id="modulo-pesquisa">
+      <div class="section-head reveal">
+        <span class="number">CAP. III</span>
+        <div>
+          <p class="label">PESQUISA & ENGENHARIA REVERSA</p>
+          <h2>Biblioteca de Anúncios<br>e Modelagem de Roteiros.</h2>
+          <p class="subtitle">Como mapear concorrentes validados, extrair estruturas vencedoras e aplicar IA para criar novas hipóteses de anúncio.</p>
+        </div>
+      </div>
+
+      <div class="learnings-stack">
+        <!-- Item 09: Hipóteses -->
+        <article class="learning-card reveal" id="aprendizado-09">
+          <div class="learning-header">
+            <span class="learning-index">09</span>
+            <h3>9. Não precisamos acertar de primeira</h3>
+            <span class="learning-badge">Mentalidade Científica</span>
+          </div>
+          <div class="learning-body">
+            <p>Um anúncio visualmente bonito e tecnicamente bem produzido não é garantia de performance.</p>
+            <p style="color: var(--orange); font-size: 1.25rem; font-weight: 900; margin: 12px 0;">
+              Criativos são hipóteses.
+            </p>
+            <div class="flow-strip" style="margin: 16px 0;">
+              <span class="flow-step">Você cria</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">coloca para rodar</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">coleta dados</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">compara</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">aprende</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 800;">cria uma nova versão.</span>
+            </div>
+            <p>Portanto, o objetivo não é encontrar “o anúncio perfeito” antes de publicar.</p>
+            <p style="font-weight: 700; color: var(--ink); margin: 0;">
+              O objetivo é desenvolver um processo contínuo de testes.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 10: Biblioteca de Anúncios -->
+        <article class="learning-card reveal" id="aprendizado-10">
+          <div class="learning-header">
+            <span class="learning-index">10</span>
+            <h3>10. Biblioteca de Anúncios como ferramenta de pesquisa</h3>
+            <span class="learning-badge">Mineração de Mercado</span>
+          </div>
+          <div class="learning-body">
+            <p>Uma das atividades da aula foi analisar anúncios de outras empresas na Biblioteca de Anúncios da Meta.</p>
+            <p>O objetivo não é simplesmente copiar o concorrente.</p>
+            <p>É observar padrões como:</p>
+            <div class="flow-strip" style="margin: 16px 0;">
+              <span class="flow-step">gancho inicial</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">duração</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">formato</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">pessoa aparecendo</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">argumento</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">benefício</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">prova</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 900;">CTA.</span>
+            </div>
+            <p>
+              Os criativos analisados deram atenção especial a conteúdos com aparência mais natural e produzidos por pessoas reais, em vez de depender somente de anúncios excessivamente padronizados.
+            </p>
+            
+            <div class="callout-box" style="margin-top: 24px; padding: 24px;">
+              <p><strong style="color: var(--orange); font-size: 1.05rem; display: block; margin-bottom: 6px;">Perguntas para analisar um anúncio</strong></p>
+              <p style="margin: 0 0 16px; color: #555;">Ao encontrar um bom criativo, pergunte:</p>
+              <div class="split" style="gap: 16px;">
+                <div style="background: #fff; padding: 16px; border-radius: 6px; border: 1px solid var(--paper-border);">
+                  <ul class="bullet-list" style="margin: 0; gap: 8px;">
+                    <li><strong>1.</strong> O que acontece nos primeiros 3 segundos?</li>
+                    <li><strong>2.</strong> Qual dor ou desejo ele aborda?</li>
+                    <li><strong>3.</strong> Existe uma pessoa falando ou é narrado?</li>
+                    <li><strong>4.</strong> Quanto tempo dura?</li>
+                  </ul>
+                </div>
+                <div style="background: #fff; padding: 16px; border-radius: 6px; border: 1px solid var(--paper-border);">
+                  <ul class="bullet-list" style="margin: 0; gap: 8px;">
+                    <li><strong>5.</strong> O produto/procedimento aparece cedo?</li>
+                    <li><strong>6.</strong> Qual benefício é apresentado?</li>
+                    <li><strong>7.</strong> Existe prova?</li>
+                    <li><strong>8.</strong> Como é feito o CTA?</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 11: Modelagem -->
+        <article class="learning-card reveal" id="aprendizado-11">
+          <div class="learning-header">
+            <span class="learning-index">11</span>
+            <h3>11. Modelagem de criativos</h3>
+            <span class="learning-badge">Estrutura Adaptada</span>
+          </div>
+          <div class="learning-body">
+            <p>Modelar não significa copiar palavra por palavra.</p>
+            <p>Significa identificar a estrutura que torna aquele anúncio interessante e criar uma versão adaptada para sua empresa.</p>
+            <p>Exemplo:</p>
+            <div class="split" style="gap: 16px; margin: 18px 0;">
+              <div style="padding: 20px; background: #fff; border: 1px solid var(--paper-border); border-radius: 6px;">
+                <p class="label" style="margin-top:0;">Criativo concorrente:</p>
+                <p style="font-weight: 700; color: var(--ink); margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                  Gancho → problema → experiência → benefício → CTA
+                </p>
+              </div>
+              <div style="padding: 20px; background: rgba(243, 154, 22, 0.08); border: 1px solid rgba(243, 154, 22, 0.3); border-radius: 6px;">
+                <p class="label" style="margin-top:0; color: var(--orange);">Nova versão modelada:</p>
+                <p style="font-weight: 700; color: var(--ink); margin: 0; font-size: 0.95rem; line-height: 1.6;">
+                  Mesmo modelo estrutural, mas com outro roteiro, outra pessoa, outras imagens e comunicação própria.
+                </p>
+              </div>
+            </div>
+            <p style="margin: 0;">
+              Na aula, a pesquisa de concorrentes foi utilizada justamente para encontrar modelos que servissem como referência para novos criativos.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 12: Extrair Roteiro com ChatGPT -->
+        <article class="learning-card reveal" id="aprendizado-12">
+          <div class="learning-header">
+            <span class="learning-index">12</span>
+            <h3>12. Como extrair um roteiro de um anúncio</h3>
+            <span class="learning-badge">Engenharia Reversa</span>
+          </div>
+          <div class="learning-body">
+            <p>Foi demonstrado um processo prático:</p>
+            <div class="flow-strip" style="margin: 16px 0 20px;">
+              <span class="flow-step">Biblioteca da Meta</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">localizar vídeo</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">baixar vídeo</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">enviar ao ChatGPT</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">transcrever</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 900;">modelar novas versões.</span>
+            </div>
+            
+            <div style="margin-bottom: 16px; padding: 18px 20px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid var(--orange); border-radius: 6px;">
+              <p class="label" style="color: var(--orange); margin-top: 0;">Prompt de transcrição:</p>
+              <p style="color: var(--ink); font-style: italic; margin: 0; font-size: 1rem; line-height: 1.6; font-weight: 600;">
+                “Transcreva exatamente o conteúdo deste vídeo, organizando corretamente a pontuação.”
+              </p>
+            </div>
+
+            <div style="margin-bottom: 20px; padding: 18px 20px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid var(--orange); border-radius: 6px;">
+              <p class="label" style="color: var(--orange); margin-top: 0;">Depois da transcrição:</p>
+              <p style="color: var(--ink); font-style: italic; margin: 0; font-size: 1rem; line-height: 1.6; font-weight: 600;">
+                “Crie 3 variações de roteiro seguindo a mesma estrutura e lógica desse criativo, adaptadas para depilação a laser.”
+              </p>
+            </div>
+
+            <p style="margin: 0;">
+              O objetivo é diminuir o tempo necessário para sair de: <strong>“Preciso inventar um anúncio”</strong> para: <strong style="color: var(--orange);">“Tenho uma estrutura validada como referência e vou criar novas hipóteses a partir dela.”</strong>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO IV: FORMATOS, PRODUÇÃO & ELEVENLABS COM IA (Tópicos 13 a 17) -->
+    <section class="dark module" id="modulo-producao">
+      <div class="section-head reveal">
+        <span class="number">CAP. IV</span>
+        <div>
+          <p class="label">FORMATOS DE PRODUÇÃO & IA</p>
+          <h2>Criativos UGC, Vídeos Curtos<br>e Narração com ElevenLabs.</h2>
+          <p class="subtitle">A união entre takes visuais autênticos e vozes sintetizadas por IA para multiplicar testes sem custos adicionais de gravação.</p>
+        </div>
+      </div>
+
+      <div class="learnings-stack">
+        <!-- Item 13: UGC -->
+        <article class="learning-card reveal" id="aprendizado-13">
+          <div class="learning-header">
+            <span class="learning-index">13</span>
+            <h3>13. Criativos UGC</h3>
+            <span class="learning-badge">Humanização</span>
+          </div>
+          <div class="learning-body">
+            <p>UGC é um formato que se aproxima de um conteúdo criado naturalmente por uma pessoa.</p>
+            <p>Exemplo:</p>
+            <div class="callout-box" style="margin: 16px 0;">
+              <p style="margin-bottom: 6px; color: #fff; font-weight: 600;">Uma cliente ou profissional falando diretamente para a câmera:</p>
+              <p style="margin: 0; font-size: 1.1rem; color: #fff; font-style: italic; font-weight: 700;">
+                “Eu sempre tive medo de fazer depilação a laser porque achava que doía…”
+              </p>
+            </div>
+            <p>
+              Esse formato pode funcionar bem porque parece menos com uma propaganda tradicional e mais com uma experiência ou recomendação real.
+            </p>
+            <p style="color: #bcb7ad; margin: 0;">
+              Durante a pesquisa de referências, anúncios desse tipo tiveram destaque entre os exemplos selecionados.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 14: Criativos Curtos -->
+        <article class="learning-card reveal" id="aprendizado-14">
+          <div class="learning-header">
+            <span class="learning-index">14</span>
+            <h3>14. Criativos curtos e objetivos</h3>
+            <span class="learning-badge">Roteiro de 19s</span>
+          </div>
+          <div class="learning-body">
+            <p>
+              O criativo que mais chamou atenção durante a análise tinha aproximadamente <strong>19 segundos</strong> e uma comunicação direta.
+            </p>
+            <p>A partir disso, a orientação foi produzir novos anúncios curtos, evitando enrolação.</p>
+            <p>Uma estrutura simples pode ser:</p>
+
+            <div class="script-breakdown" style="grid-template-columns: repeat(2, 1fr); margin-top: 18px;">
+              <article class="script-card">
+                <h4>1. Gancho</h4>
+                <p style="margin:0 0 8px; font-size:0.95rem; color:#bcb7ad;">Chamar atenção imediatamente.</p>
+                <p style="margin:0; font-style:italic; color:#fff; font-weight:700;">“Se você sofre com irritação depois da lâmina, olha isso.”</p>
+              </article>
+              <article class="script-card">
+                <h4>2. Problema</h4>
+                <p style="margin:0 0 8px; font-size:0.95rem; color:#bcb7ad;">Mostrar uma dor conhecida.</p>
+                <p style="margin:0; font-style:italic; color:#fff; font-weight:700;">“Muitas mulheres vivem repetindo esse processo toda semana.”</p>
+              </article>
+              <article class="script-card">
+                <h4>3. Solução/benefício</h4>
+                <p style="margin:0 0 8px; font-size:0.95rem; color:#bcb7ad;">Apresentar o procedimento.</p>
+                <p style="margin:0; font-style:italic; color:#fff; font-weight:700;">“A depilação a laser pode ser uma alternativa para diminuir essa rotina.”</p>
+              </article>
+              <article class="script-card">
+                <h4>4. CTA</h4>
+                <p style="margin:0 0 8px; font-size:0.95rem; color:#bcb7ad;">Dar um próximo passo claro.</p>
+                <p style="margin:0; font-style:italic; color:#fff; font-weight:700;">“Clique abaixo e converse com nossa equipe no WhatsApp.”</p>
+              </article>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 15: ElevenLabs -->
+        <article class="learning-card reveal" id="aprendizado-15">
+          <div class="learning-header">
+            <span class="learning-index">15</span>
+            <h3>15. ElevenLabs: criativos narrados com IA</h3>
+            <span class="learning-badge">Inteligência Artificial</span>
+          </div>
+          <div class="learning-body">
+            <p>Além de pessoas gravando diretamente para a câmera, foi apresentada outra possibilidade:</p>
+            <p style="font-size: 1.2rem; font-weight: 800; color: var(--orange); margin: 10px 0;">
+              Criativo narrado por inteligência artificial.
+            </p>
+            <p>O ElevenLabs permite inserir um texto, selecionar uma voz e gerar a narração.</p>
+            <div class="callout-box">
+              <p><strong style="color: var(--orange); display: block; margin-bottom: 6px;">Isso abre uma possibilidade importante:</strong></p>
+              <p style="font-size: 1.05rem; font-weight: 700; color: #fff; margin: 0;">
+                o mesmo conjunto de imagens pode receber diferentes roteiros e diferentes narrações.
+              </p>
+            </div>
+            <p style="color: #bcb7ad; margin: 0;">
+              Assim, não é necessário realizar uma nova gravação presencial todas as vezes que você quiser testar uma abordagem diferente.
+            </p>
+          </div>
+        </article>
+
+        <!-- Item 16: Fluxo para produzir um criativo narrado -->
+        <article class="learning-card reveal" id="aprendizado-16">
+          <div class="learning-header">
+            <span class="learning-index">16</span>
+            <h3>16. Fluxo para produzir um criativo narrado</h3>
+            <span class="learning-badge">Guia Passo a Passo</span>
+          </div>
+          <div class="learning-body">
+            <p>O processo ensinado pode ser resumido assim:</p>
+            
+            <ol style="list-style:none; padding:0; margin:16px 0 24px; display:flex; flex-direction:column; gap:12px;">
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">1.</strong>
+                Grave ou separe takes do procedimento.
+                <div style="margin-top:8px; padding:8px 12px; background:rgba(0,0,0,0.3); border-radius:4px; font-size:0.9rem; color:#aaa;">
+                  <strong>Exemplo:</strong> entrada da cliente → aplicação do laser → equipamento → profissional → ambiente → resultado.
+                </div>
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">2.</strong>
+                Escreva um roteiro curto.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">3.</strong>
+                Coloque o roteiro no ElevenLabs.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">4.</strong>
+                Escolha e teste uma voz.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">5.</strong>
+                Ajuste pronúncias e entonações.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">6.</strong>
+                Exporte a narração.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">7.</strong>
+                Coloque o áudio sobre os takes no editor.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">8.</strong>
+                Corte as imagens acompanhando a narração.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">9.</strong>
+                Adicione legendas.
+              </li>
+              <li style="padding:14px 18px; background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:6px; color:#d1ccbf; font-size:0.95rem; line-height:1.6;">
+                <strong style="color:var(--orange); font-size:1.1rem; margin-right:8px;">10.</strong>
+                Termine com CTA.
+              </li>
+            </ol>
+
+            <div class="callout-box" style="margin: 0;">
+              <p style="color: #bcb7ad;">
+                Durante a aula também foi observado que nomes de marcas ou palavras específicas podem exigir ajustes de grafia e acentuação para que a IA pronuncie corretamente.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 17: Vários Testes -->
+        <article class="learning-card reveal" id="aprendizado-17">
+          <div class="learning-header">
+            <span class="learning-index">17</span>
+            <h3>17. Um vídeo pode gerar vários testes</h3>
+            <span class="learning-badge">Escala de Anúncios</span>
+          </div>
+          <div class="learning-body">
+            <p>Uma vantagem do criativo narrado é poder utilizar o mesmo material visual e testar diferentes mensagens.</p>
+            
+            <div style="padding: 18px 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px; margin: 16px 0 20px;">
+              <p class="label" style="margin-top:0;">Vídeo base:</p>
+              <p style="font-weight: 800; color: #fff; margin: 0; font-size: 1.05rem;">
+                cliente chegando + procedimento + ambiente + equipamento
+              </p>
+            </div>
+
+            <div class="split" style="gap: 14px; margin-bottom: 20px;">
+              <div style="padding: 14px 18px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--orange); border-radius: 4px;">
+                <strong style="color: #fff;">Versão A:</strong> <span style="color: #d1ccbf;">foco em dor.</span>
+              </div>
+              <div style="padding: 14px 18px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--orange); border-radius: 4px;">
+                <strong style="color: #fff;">Versão B:</strong> <span style="color: #d1ccbf;">foco em medo do procedimento.</span>
+              </div>
+              <div style="padding: 14px 18px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--orange); border-radius: 4px;">
+                <strong style="color: #fff;">Versão C:</strong> <span style="color: #d1ccbf;">foco em praticidade.</span>
+              </div>
+              <div style="padding: 14px 18px; background: rgba(255,255,255,0.03); border-left: 3px solid var(--orange); border-radius: 4px;">
+                <strong style="color: #fff;">Versão D:</strong> <span style="color: #d1ccbf;">foco em experiência da cliente.</span>
+              </div>
+            </div>
+
+            <p style="font-size: 1.05rem; line-height: 1.7; color: #fff; font-weight: 700; margin: 0;">
+              Assim você consegue testar a comunicação, e não somente a edição.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO V: COMERCIAL & DECISÃO ESTRATÉGICA (Tópicos 18 a 21) -->
+    <section class="paper module" id="modulo-estrategia">
+      <div class="section-head reveal">
+        <span class="number">CAP. V</span>
+        <div>
+          <p class="label">COMERCIAL & NEGÓCIO</p>
+          <h2>Do Tráfego ao Caixa:<br>Métricas Reais e Decisões.</h2>
+          <p class="subtitle">A dinâmica entre campanhas de mensagens, fechamento comercial e a estratégia traçada para a conta.</p>
+        </div>
+      </div>
+
+      <div class="learnings-stack">
+        <!-- Item 18: Campanha de Mensagens -->
+        <article class="learning-card reveal" id="aprendizado-18">
+          <div class="learning-header">
+            <span class="learning-index">18</span>
+            <h3>18. Por que continuar com campanha de mensagens?</h3>
+            <span class="learning-badge">Gestão de Orçamento</span>
+          </div>
+          <div class="learning-body">
+            <p>Também foi discutida a possibilidade de criar campanhas de reconhecimento ou de levar pessoas para o perfil.</p>
+            <p>A decisão ensinada foi priorizar, naquele momento, a campanha de mensagens porque o orçamento disponível para um negócio local é limitado.</p>
+            <p>Dividir prematuramente a verba entre muitas campanhas poderia diminuir a velocidade dos testes.</p>
+            <div class="callout-box" style="margin: 16px 0 0;">
+              <p style="color: var(--ink); margin: 0;">
+                Reconhecimento e remarketing podem ser adicionados posteriormente, quando existir mais informação e estrutura para trabalhar diferentes etapas do funil.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 19: Tráfego e Comercial -->
+        <article class="learning-card reveal" id="aprendizado-19">
+          <div class="learning-header">
+            <span class="learning-index">19</span>
+            <h3>19. Tráfego pago não termina no Gerenciador</h3>
+            <span class="learning-badge">Alinhamento de Funil</span>
+          </div>
+          <div class="learning-body">
+            <p>As métricas do Meta contam apenas parte da história.</p>
+            <p>É necessário cruzar os dados com o comercial.</p>
+            
+            <div class="split" style="gap: 16px; margin: 18px 0;">
+              <div style="padding: 20px; background: #fff; border: 1px solid var(--paper-border); border-radius: 6px;">
+                <p class="label" style="margin-top:0;">Dentro do Gerenciador:</p>
+                <p style="color: var(--ink); font-weight: 700; margin: 0; font-size: 1rem; line-height: 1.6;">
+                  CTR → CPM → cliques → mensagens → CPL
+                </p>
+              </div>
+              <div style="padding: 20px; background: rgba(243, 154, 22, 0.08); border: 1px solid rgba(243, 154, 22, 0.3); border-radius: 6px;">
+                <p class="label" style="margin-top:0; color: var(--orange);">Depois precisamos acompanhar:</p>
+                <p style="color: var(--ink); font-weight: 700; margin: 0; font-size: 1rem; line-height: 1.6;">
+                  lead → qualidade → agendamento → comparecimento → fechamento → faturamento.
+                </p>
+              </div>
+            </div>
+
+            <div class="callout-box" style="margin: 0;">
+              <p style="font-weight: 700; color: var(--ink); margin: 0;">
+                Por isso, uma campanha não deve ser considerada boa apenas porque gerou muitos leads baratos.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 20: Volume x Qualidade -->
+        <article class="learning-card reveal" id="aprendizado-20">
+          <div class="learning-header">
+            <span class="learning-index">20</span>
+            <h3>20. Volume x qualidade</h3>
+            <span class="learning-badge">Visão Comercial</span>
+          </div>
+          <div class="learning-body">
+            <p>Aumentar o número de leads pode diminuir um pouco a taxa percentual de fechamento e, mesmo assim, aumentar muito a quantidade total de vendas.</p>
+            <p>Exemplo:</p>
+            
+            <div style="padding: 20px; background: #fff; border: 1px solid var(--paper-border); border-radius: 6px; margin: 16px 0 20px;">
+              <div class="split" style="gap: 16px; align-items: center;">
+                <div>
+                  <p style="margin: 0; color: var(--ink); font-weight: 700; font-size: 1.05rem;">
+                    10 leads × 20% de fechamento = 2 clientes
+                  </p>
+                </div>
+                <div style="text-align: right;">
+                  <span class="label" style="color: var(--muted); margin: 0 8px 0 0;">versus</span>
+                  <p style="margin: 0; color: var(--orange); font-weight: 900; font-size: 1.05rem; display: inline-block;">
+                    30 leads × 17% de fechamento = aproximadamente 5 clientes
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p>Portanto, o objetivo não é proteger uma porcentagem bonita.</p>
+            <div class="callout-box" style="margin: 0;">
+              <p style="font-weight: 700; color: var(--ink); margin: 0;">
+                É encontrar equilíbrio entre: <span style="color: var(--orange); font-weight: 900;">volume + qualidade + capacidade comercial + retorno financeiro.</span>
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 21: Decisão da Campanha -->
+        <article class="learning-card reveal" id="aprendizado-21" style="border: 2px solid var(--orange); background: #fff;">
+          <div class="learning-header">
+            <span class="learning-index">21</span>
+            <h3>21. O que ficou decidido para a campanha?</h3>
+            <span class="learning-badge" style="background: var(--orange); color: var(--ink);">Plano Estratégico</span>
+          </div>
+          <div class="learning-body">
+            <p style="font-size: 1.05rem; line-height: 1.65; color: #333; margin-bottom: 16px;">
+              A estratégia definida foi:
+            </p>
+            <ul class="bullet-list" style="margin: 0 0 20px;">
+              <li>não realizar mudanças bruscas na estrutura naquele momento;</li>
+              <li>continuar acumulando dados;</li>
+              <li>analisar novamente os conjuntos depois de mais tempo de veiculação;</li>
+              <li>produzir novos criativos durante essa janela;</li>
+              <li>usar os novos materiais na próxima fase de testes.</li>
+            </ul>
+            <div class="callout-box" style="margin: 0;">
+              <p style="font-weight: 600; color: var(--ink); margin: 0; line-height: 1.65;">
+                A campanha ainda havia rodado pouco tempo em dias úteis, por isso a orientação foi ter paciência estatística antes de definir vencedores ou perdedores.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAPÍTULO VI: TAREFAS & SÍNTESE EXECUTIVA -->
+    <section class="paper module practice" id="modulo-tarefas">
+      <div class="section-head reveal">
+        <span class="number">CAP. VI</span>
+        <div>
+          <p class="label">APLICAÇÃO PRÁTICA</p>
+          <h2>Tarefas da Aula 2</h2>
+          <p class="subtitle">Plano de execução imediata pós-mentoria dividido por frentes de responsabilidade.</p>
+        </div>
+      </div>
+
+      <div class="task-list reveal" style="margin-bottom: 60px;">
+        <!-- Produção -->
+        <article class="task-item">
+          <span class="task-num">01</span>
+          <div class="task-content">
+            <h3>Produção</h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; color: #555; font-size: 0.95rem; line-height: 1.65;">
+              <li><strong style="color:var(--ink);">→</strong> Criar dois novos criativos seguindo referências estudadas na Biblioteca de Anúncios.</li>
+              <li><strong style="color:var(--ink);">→</strong> Criar/gravar um novo material com a Bia, caso a agenda permita.</li>
+              <li><strong style="color:var(--ink);">→</strong> Editar os materiais em formatos adequados para anúncio.</li>
+              <li><strong style="color:var(--ink);">→</strong> Testar a possibilidade de produzir um criativo narrado usando ElevenLabs.</li>
+            </ul>
+          </div>
+          <span class="task-badge">CRIATIVOS</span>
+        </article>
+
+        <!-- Campanha -->
+        <article class="task-item">
+          <span class="task-num">02</span>
+          <div class="task-content">
+            <h3>Campanha</h3>
+            <p style="margin: 0; color: #555; font-size: 0.95rem; line-height: 1.65;">
+              Finalizar a duplicação/configuração dos conjuntos que ficaram pendentes, incluindo ajustes de localização e público.
+            </p>
+          </div>
+          <span class="task-badge">CONJUNTOS</span>
+        </article>
+
+        <!-- Comercial -->
+        <article class="task-item">
+          <span class="task-num">03</span>
+          <div class="task-content">
+            <h3>Comercial</h3>
+            <p style="margin: 0; color: #555; font-size: 0.95rem; line-height: 1.65;">
+              Retomar o contato com Kelly, que havia iniciado uma conversa e parado de responder.
+            </p>
+          </div>
+          <span class="task-badge">WHATSAPP</span>
+        </article>
+      </div>
+
+      <p class="reveal" style="font-size: 0.95rem; color: #777; margin-bottom: 60px; font-style: italic;">
+        Essas foram registradas como próximas etapas da reunião.
+      </p>
+
+      <!-- SÍNTESE EXECUTIVA: O que você deve lembrar desta aula -->
+      <div class="section-head reveal" id="modulo-sintese" style="margin-bottom: 40px;">
+        <span class="number">SÍNTESE</span>
+        <div>
+          <p class="label">RESUMO DA AULA 2</p>
+          <h2>O que você deve lembrar desta aula</h2>
+          <p class="subtitle">Os 10 fundamentos essenciais consolidados na aula para consultar antes de qualquer alteração de campanha.</p>
+        </div>
+      </div>
+
+      <div class="principles-grid reveal">
+        <article class="principle-card">
+          <span class="principle-num">01</span>
+          <div>
+            <h3>Otimizar não é mexer por mexer.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">02</span>
+          <div>
+            <h3>Primeiro diagnostique o gargalo.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">03</span>
+          <div>
+            <h3>Poucos dados exigem paciência.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">04</span>
+          <div>
+            <h3>Isole variáveis durante os testes.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">05</span>
+          <div>
+            <h3>CTR baixo pode indicar necessidade de melhorar o criativo.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">06</span>
+          <div>
+            <h3>Criativo é uma hipótese, não uma obra definitiva.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">07</span>
+          <div>
+            <h3>Use concorrentes como referência de estrutura, não para copiar.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">08</span>
+          <div>
+            <h3>UGC e criativos narrados são formatos diferentes que podem ser testados.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">09</span>
+          <div>
+            <h3>Tráfego precisa conversar com o comercial.</h3>
+          </div>
+        </article>
+
+        <article class="principle-card">
+          <span class="principle-num">10</span>
+          <div>
+            <h3>O objetivo final é faturamento, não apenas lead barato.</h3>
+          </div>
+        </article>
+      </div>
+
+      <!-- Quick Aulas Switcher Bar -->
+      <div class="editorial-box reveal" style="margin-top: 60px; text-align: center; padding: 40px 24px;">
+        <p class="label" style="margin-top:0;">CONTINUIDADE DA MENTORIA</p>
+        <h3 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--ink);">Navegue entre os Módulos da Mentoria</h3>
+        <p style="max-width: 600px; margin: 0 auto 24px; color: #555;">Você pode alternar entre a Aula 1 (39 Aprendizados e Fundamentos) e a Aula 2 (Criativos, UGC e IA) a qualquer momento.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html" class="button outline">
+            <span>← Ir para Aula 1</span>
+          </a>
+          <button type="button" class="button primary" data-open-aulas>
+            <span>Ver Todas as Aulas ❖</span>
+          </button>
+        </div>
+      </div>
+
+      <footer>
+        <a class="brand" href="#inicio" aria-label="Voltar ao início">
+          <span>LEVITALLI</span><i></i>
+        </a>
+        <p>Mentoria de Tráfego Pago · Arthur · Caso Clínico Levitalli · 2026</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Aulas Selection Modal -->
+  <div class="aulas-modal-overlay" id="aulasModal" role="dialog" aria-modal="true" aria-labelledby="aulasModalTitle" hidden>
+    <div class="aulas-modal-backdrop" data-close-aulas></div>
+    <div class="aulas-modal-container">
+      <div class="aulas-modal-header">
+        <div>
+          <p class="modal-eyebrow">MENTORIA DE TRÁFEGO PAGO • LEVITALLI</p>
+          <h2 id="aulasModalTitle">Selecione a Aula</h2>
+          <p class="modal-sub">Escolha qual conteúdo da mentoria você deseja estudar agora:</p>
+        </div>
+        <button class="aulas-modal-close" data-close-aulas aria-label="Fechar seleção de aulas">✕</button>
+      </div>
+
+      <div class="aulas-grid">
+        <!-- Aula 01 -->
+        <article class="aula-card">
+          <div>
+            <div class="aula-card-badge">AULA 01 • DISPONÍVEL</div>
+            <h3>Tráfego que Vira Decisão</h3>
+            <p class="aula-desc">39 aprendizados fundamentais: princípios centrais, isolamento de variáveis, diagnóstico cruzado de métricas (CTR, CPM, frequência, CPL) e alinhamento direto com o fechamento comercial.</p>
+            <div class="aula-topics">
+              <span>10 Princípios</span>
+              <span>Estrutura</span>
+              <span>Métricas & Diagnóstico</span>
+              <span>39 Aprendizados</span>
+              <span>Exercícios</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span></span>
+            <a href="index.html" class="button primary small"><span>Estudar Aula 1 →</span></a>
+          </div>
+        </article>
+
+        <!-- Aula 02 -->
+        <article class="aula-card is-current">
+          <div>
+            <div class="aula-card-badge highlight"><span class="dot-live"></span> AULA 02 • ATUAL</div>
+            <h3>2 — Criativos</h3>
+            <p class="aula-desc">Otimização sem mexer na estrutura, qualidade de leads reais vs CPL, diagnóstico detalhado da campanha, pesquisa na Biblioteca de Anúncios, modelagem, UGC e ElevenLabs (IA).</p>
+            <div class="aula-topics">
+              <span>O que é Otimizar</span>
+              <span>Qualidade dos Leads</span>
+              <span>Diagnóstico Real</span>
+              <span>Modelagem de Anúncios</span>
+              <span>UGC & ElevenLabs (IA)</span>
+              <span>Tarefas</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span class="current-label">● Você está aqui</span>
+            <button type="button" class="button outline small" data-close-aulas><span>Continuar Lendo</span></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clean interaction script -->
+  <script src="script.js"></script>
+</body>
+</html>

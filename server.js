@@ -44,6 +44,14 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
+// Explicit route for Aula 2
+app.get(['/aula-02', '/aula-02.html', '/aula-2', '/aula-2.html'], (req, res) => {
+  const file = fs.existsSync(path.join(publicDir, 'aula-02.html'))
+    ? path.join(publicDir, 'aula-02.html')
+    : path.join(__dirname, 'aula-02.html');
+  res.type('text/html').sendFile(file);
+});
+
 // Serve index.html for page routes; return 404 for missing assets with file extensions
 app.get('*', (req, res) => {
   if (path.extname(req.path)) {

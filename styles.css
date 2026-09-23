@@ -966,6 +966,10 @@ section {
   color: var(--ink);
 }
 
+.paper .script-card p {
+  color: #555555;
+}
+
 .paper .script-card ol li {
   color: #38342d;
   background: #faf8f4;
@@ -1229,5 +1233,411 @@ section {
 
   .button.primary {
     transition: none;
+  }
+}
+
+/* ==========================================================================
+   Aulas Menu Trigger & Selector Modal
+   ========================================================================== */
+.menu-aulas-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(243, 154, 22, 0.12);
+  border: 1px solid rgba(243, 154, 22, 0.4);
+  color: var(--orange);
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.menu-aulas-link:hover {
+  background: var(--orange);
+  color: var(--ink);
+  border-color: var(--orange);
+}
+
+.menu-aulas-link .aulas-arrow {
+  font-size: 9px;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.menu-aulas-link[aria-expanded="true"] .aulas-arrow {
+  transform: rotate(180deg);
+}
+
+.aulas-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.menu-aulas-link:hover .aulas-badge {
+  background: var(--ink);
+  color: var(--orange);
+}
+
+.aulas-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.aulas-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.aulas-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.aulas-modal-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 4px solid var(--orange);
+  border-radius: 12px;
+  padding: 36px 32px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  transform: translateY(20px) scale(0.98);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aulas-modal-overlay.active .aulas-modal-container {
+  transform: translateY(0) scale(1);
+}
+
+.aulas-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.modal-eyebrow {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--orange);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.aulas-modal-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.modal-sub {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.aulas-modal-close {
+  width: 38px;
+  height: 38px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--line);
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.aulas-modal-close:hover {
+  background: var(--orange);
+  color: var(--ink);
+  border-color: var(--orange);
+}
+
+.aulas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.aula-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px;
+  background: #131313;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.aula-card:hover {
+  border-color: rgba(243, 154, 22, 0.5);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.aula-card.is-current {
+  border-color: var(--orange);
+  background: linear-gradient(180deg, rgba(243, 154, 22, 0.06) 0%, #131313 100%);
+}
+
+.aula-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.aula-card-badge.highlight {
+  color: var(--orange);
+}
+
+.aula-card-badge .dot-live {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+}
+
+.aula-card h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 0 0 12px;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.aula-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #b8b3a7;
+  margin: 0 0 20px;
+  flex-grow: 1;
+}
+
+.aula-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.aula-topics span {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.aula-action {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.current-label {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--orange);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ==========================================================================
+   Diagnosis Table Styling
+   ========================================================================== */
+.diagnosis-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 32px 0;
+  border-radius: 8px;
+  border: 1px solid var(--paper-border);
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.paper .diagnosis-table-wrapper {
+  background: #ffffff;
+  border: 1px solid var(--paper-border);
+}
+
+.dark .diagnosis-table-wrapper {
+  background: #191919;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.diagnosis-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.diagnosis-table th {
+  background: #f0ece1;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  border-bottom: 2px solid var(--paper-border);
+}
+
+.dark .diagnosis-table th {
+  background: #222;
+  color: #fff;
+  border-bottom: 2px solid var(--line);
+}
+
+.diagnosis-table td {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--paper-border);
+  color: #333;
+}
+
+.dark .diagnosis-table td {
+  border-bottom: 1px solid var(--line);
+  color: #d1ccbf;
+}
+
+.diagnosis-table tr:last-child td {
+  border-bottom: none;
+}
+
+.diagnosis-table tr:hover td {
+  background: rgba(243, 154, 22, 0.04);
+}
+
+.dark .diagnosis-table tr:hover td {
+  background: rgba(243, 154, 22, 0.08);
+}
+
+.diagnosis-table td.metric-name {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.dark .diagnosis-table td.metric-name {
+  color: #ffffff;
+}
+
+.diagnosis-table td.metric-val {
+  font-weight: 900;
+  color: var(--orange);
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.flow-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.flow-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--paper-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.dark .flow-step {
+  background: #191919;
+  color: #fff;
+  border-color: var(--line);
+}
+
+.flow-arrow {
+  color: var(--orange);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .aulas-grid {
+    grid-template-columns: 1fr;
+  }
+  .aulas-modal-container {
+    padding: 24px 20px;
+  }
+  .flow-cards {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flow-arrow {
+    text-align: center;
+    transform: rotate(90deg);
   }
 }

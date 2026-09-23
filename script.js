@@ -50,3 +50,59 @@ if (downloadBtn) {
     link.remove();
   });
 }
+
+// Aulas Selector Modal Handler
+const aulasModal = document.getElementById('aulasModal');
+const openAulasBtns = document.querySelectorAll('[data-open-aulas]');
+const closeAulasBtns = document.querySelectorAll('[data-close-aulas]');
+
+function openAulas() {
+  if (!aulasModal) return;
+  aulasModal.removeAttribute('hidden');
+  // force reflow for smooth animation
+  void aulasModal.offsetWidth;
+  aulasModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  openAulasBtns.forEach((btn) => btn.setAttribute('aria-expanded', 'true'));
+  // If mobile menu was open, close it
+  if (menu && menu.classList.contains('open')) {
+    menu.classList.remove('open');
+    if (button) {
+      button.setAttribute('aria-expanded', 'false');
+      const span = button.querySelector('span');
+      if (span) span.textContent = '+';
+    }
+  }
+}
+
+function closeAulas() {
+  if (!aulasModal) return;
+  aulasModal.classList.remove('active');
+  document.body.style.overflow = '';
+  openAulasBtns.forEach((btn) => btn.setAttribute('aria-expanded', 'false'));
+  setTimeout(() => {
+    if (!aulasModal.classList.contains('active')) {
+      aulasModal.setAttribute('hidden', '');
+    }
+  }, 250);
+}
+
+openAulasBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openAulas();
+  });
+});
+
+closeAulasBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    closeAulas();
+  });
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && aulasModal && aulasModal.classList.contains('active')) {
+    closeAulas();
+  }
+});

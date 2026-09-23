@@ -26,6 +26,9 @@
         Menu <span>+</span>
       </button>
       <div class="menu" id="menu">
+        <button class="menu-aulas-link" id="navLinkAulas" type="button" data-open-aulas aria-haspopup="dialog" aria-expanded="false" aria-label="Abrir catálogo de aulas">
+          <span>Aulas</span> <span class="aulas-badge">2</span> <i class="aulas-arrow">▼</i>
+        </button>
         <a href="#principios" id="navLinkPrincipios">10 Princípios</a>
         <a href="#modulo-criativos" id="navLinkCriativos">Criativos</a>
         <a href="#modulo-metricas" id="navLinkMetricas">Métricas & Diagnóstico</a>
@@ -1102,6 +1105,64 @@
       </footer>
     </section>
   </main>
+
+  <!-- Aulas Selection Modal -->
+  <div class="aulas-modal-overlay" id="aulasModal" role="dialog" aria-modal="true" aria-labelledby="aulasModalTitle" hidden>
+    <div class="aulas-modal-backdrop" data-close-aulas></div>
+    <div class="aulas-modal-container">
+      <div class="aulas-modal-header">
+        <div>
+          <p class="modal-eyebrow">MENTORIA DE TRÁFEGO PAGO • LEVITALLI</p>
+          <h2 id="aulasModalTitle">Selecione a Aula</h2>
+          <p class="modal-sub">Escolha qual conteúdo da mentoria você deseja estudar agora:</p>
+        </div>
+        <button class="aulas-modal-close" data-close-aulas aria-label="Fechar seleção de aulas">✕</button>
+      </div>
+
+      <div class="aulas-grid">
+        <!-- Aula 01 -->
+        <article class="aula-card is-current">
+          <div>
+            <div class="aula-card-badge"><span class="dot-live"></span> AULA 01 • ATUAL</div>
+            <h3>Tráfego que Vira Decisão</h3>
+            <p class="aula-desc">39 aprendizados fundamentais: princípios centrais, isolamento de variáveis, diagnóstico cruzado de métricas (CTR, CPM, frequência, CPL) e alinhamento direto com o fechamento comercial.</p>
+            <div class="aula-topics">
+              <span>10 Princípios</span>
+              <span>Estrutura</span>
+              <span>Métricas & Diagnóstico</span>
+              <span>39 Aprendizados</span>
+              <span>Exercícios</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span class="current-label">● Você está aqui</span>
+            <button type="button" class="button outline small" data-close-aulas><span>Continuar Lendo</span></button>
+          </div>
+        </article>
+
+        <!-- Aula 02 -->
+        <article class="aula-card">
+          <div>
+            <div class="aula-card-badge highlight">AULA 02 • DISPONÍVEL</div>
+            <h3>2 — Criativos</h3>
+            <p class="aula-desc">Otimização sem mexer na estrutura, qualidade de leads reais vs CPL, diagnóstico detalhado da campanha, pesquisa na Biblioteca de Anúncios, modelagem, UGC e ElevenLabs (IA).</p>
+            <div class="aula-topics">
+              <span>O que é Otimizar</span>
+              <span>Qualidade dos Leads</span>
+              <span>Diagnóstico Real</span>
+              <span>Modelagem de Anúncios</span>
+              <span>UGC & ElevenLabs (IA)</span>
+              <span>Tarefas</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span></span>
+            <a href="aula-02.html" class="button primary small"><span>Estudar Aula 2 →</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
 
   <!-- Clean interaction script -->
   <script src="script.js"></script>

@@ -3,7 +3,7 @@
   "cleanUrls": true,
   "functions": {
     "server.js": {
-      "includeFiles": "{styles.css,script.js,aula-01-mentoria-trafego.pdf,index.html,public/**}"
+      "includeFiles": "{styles.css,script.js,aula-01-mentoria-trafego.pdf,index.html,aula-02.html,aula-2.html,public/**}"
     }
   },
   "routes": [
@@ -13,6 +13,14 @@
     {
       "src": "/api/health",
       "dest": "/server.js"
+    },
+    {
+      "src": "/aula-02",
+      "dest": "/aula-02.html"
+    },
+    {
+      "src": "/aula-2",
+      "dest": "/aula-02.html"
     },
     {
       "src": "/(.*)",
