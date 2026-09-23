@@ -11,15 +11,17 @@ const io = new IntersectionObserver(
 );
 reveals.forEach((el) => io.observe(el));
 
-const bar = document.getElementById('progressBar');
-addEventListener(
-  'scroll',
-  () => {
-    const h = document.documentElement.scrollHeight - innerHeight;
-    bar.style.width = `${h ? (scrollY / h) * 100 : 0}%`;
-  },
-  { passive: true }
-);
+const bar = document.getElementById('progressBar') || document.querySelector('.reading-progress span') || document.querySelector('.reading-progress');
+if (bar) {
+  addEventListener(
+    'scroll',
+    () => {
+      const h = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = `${h > 0 ? (scrollY / h) * 100 : 0}%`;
+    },
+    { passive: true }
+  );
+}
 
 const button = document.querySelector('.menu-button');
 const menu = document.getElementById('menu');
