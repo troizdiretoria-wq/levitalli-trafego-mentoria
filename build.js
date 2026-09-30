@@ -13,6 +13,7 @@ if (!fs.existsSync(publicDir)) {
 const filesToCopy = [
   'index.html',
   'aula-02.html',
+  'aula-03.html',
   'styles.css',
   'script.js',
   'aula-01-mentoria-trafego.pdf'
@@ -26,12 +27,19 @@ for (const file of filesToCopy) {
   }
 }
 
-// Also create alias aula-2.html in public/ and root for convenience
+// Also create alias aula-2.html and aula-3.html in public/ and root for convenience
 const aula2Src = path.join(__dirname, 'aula-02.html');
 if (fs.existsSync(aula2Src)) {
   fs.copyFileSync(aula2Src, path.join(publicDir, 'aula-2.html'));
   fs.copyFileSync(aula2Src, path.join(__dirname, 'aula-2.html'));
   console.log('Created aula-2.html alias');
+}
+
+const aula3Src = path.join(__dirname, 'aula-03.html');
+if (fs.existsSync(aula3Src)) {
+  fs.copyFileSync(aula3Src, path.join(publicDir, 'aula-3.html'));
+  fs.copyFileSync(aula3Src, path.join(__dirname, 'aula-3.html'));
+  console.log('Created aula-3.html alias');
 }
 
 console.log('Build complete: assets copied to public/ for Vercel CDN deployment.');

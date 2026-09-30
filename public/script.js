@@ -108,3 +108,66 @@ window.addEventListener('keydown', (e) => {
     closeAulas();
   }
 });
+
+// Study Mode Switcher (Estudo Objetivo vs Estudo Detalhado)
+const viewObjetivo = document.getElementById('viewEstudoObjetivo');
+const viewDetalhado = document.getElementById('viewEstudoDetalhado');
+const studyModeBtns = document.querySelectorAll('[data-study-mode]');
+
+function switchStudyMode(mode, shouldScroll = true) {
+  if (!viewObjetivo || !viewDetalhado) return;
+
+  if (mode === 'detalhado') {
+    viewObjetivo.setAttribute('hidden', '');
+    viewDetalhado.removeAttribute('hidden');
+    // Ensure all reveals in detailed view are visible or observed
+    viewDetalhado.querySelectorAll('.reveal').forEach((el) => {
+      io.observe(el);
+    });
+    studyModeBtns.forEach((btn) => {
+      if (btn.getAttribute('data-study-mode') === 'detalhado') {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+      } else {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      }
+    });
+    if (shouldScroll) {
+      const target = document.getElementById('estudo-detalhado') || viewDetalhado;
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  } else {
+    viewDetalhado.setAttribute('hidden', '');
+    viewObjetivo.removeAttribute('hidden');
+    viewObjetivo.querySelectorAll('.reveal').forEach((el) => {
+      io.observe(el);
+    });
+    studyModeBtns.forEach((btn) => {
+      if (btn.getAttribute('data-study-mode') === 'objetivo') {
+        btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
+      } else {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-pressed', 'false');
+      }
+    });
+    if (shouldScroll) {
+      const target = document.getElementById('estudo-objetivo') || document.getElementById('inicio');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
+
+studyModeBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const mode = btn.getAttribute('data-study-mode');
+    switchStudyMode(mode, true);
+  });
+});
+
+// Direct link via URL hash support
+if (window.location.hash === '#estudo-detalhado') {
+  switchStudyMode('detalhado', false);
+}

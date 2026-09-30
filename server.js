@@ -52,6 +52,14 @@ app.get(['/aula-02', '/aula-02.html', '/aula-2', '/aula-2.html'], (req, res) => 
   res.type('text/html').sendFile(file);
 });
 
+// Explicit route for Aula 3
+app.get(['/aula-03', '/aula-03.html', '/aula-3', '/aula-3.html'], (req, res) => {
+  const file = fs.existsSync(path.join(publicDir, 'aula-03.html'))
+    ? path.join(publicDir, 'aula-03.html')
+    : path.join(__dirname, 'aula-03.html');
+  res.type('text/html').sendFile(file);
+});
+
 // Serve index.html for page routes; return 404 for missing assets with file extensions
 app.get('*', (req, res) => {
   if (path.extname(req.path)) {

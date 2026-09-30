@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 3 — Otimização • Mentoria de Tráfego Pago Levitalli</title>
+  <meta name="description" content="Aula 3 de Tráfego Pago Levitalli: Otimização de campanhas para negócios locais. Estudo Objetivo como principal e Estudo Detalhado completo sob demanda.">
+  <meta property="og:title" content="Aula 3 — Otimização • Mentoria de Tráfego Pago Levitalli">
+  <meta property="og:description" content="Estudo Objetivo da Aula e Estudo Detalhado completo: diagnóstico comercial, criativos, reconhecimento, públicos, frequência, Advantage e método de otimização.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <!-- STICKY TOPBAR HEADER -->
+  <header class="topbar" id="appHeader">
+    <a class="brand" href="#inicio" aria-label="Voltar ao início da aula" id="brandLogo">
+      <span>LEVITALLI</span><i></i><small>Tráfego Pago</small>
+    </a>
+    <nav aria-label="Navegação da aula">
+      <button class="menu-button" aria-expanded="false" aria-controls="menu" id="menuToggleBtn">
+        Menu <span>+</span>
+      </button>
+      <div class="menu" id="menu">
+        <button class="menu-aulas-link" id="navLinkAulas" type="button" data-open-aulas aria-haspopup="dialog" aria-expanded="false" aria-label="Abrir catálogo de aulas">
+          <span>Aulas</span> <span class="aulas-badge">3</span> <i class="aulas-arrow">▼</i>
+        </button>
+        <button type="button" class="study-segment-btn" data-study-mode="detalhado" style="color:var(--orange); font-weight:800; border:1px solid rgba(243,154,22,0.3); background:rgba(243,154,22,0.1);">
+          <span>📖 Estudo Detalhado</span>
+        </button>
+        <a href="#modulo-comercial" id="navLinkComercial">Comercial</a>
+        <a href="#modulo-funil" id="navLinkFunil">Topo de Funil</a>
+        <a href="#modulo-publicos" id="navLinkPublicos">Públicos</a>
+        <a href="#modulo-otimizacao" id="navLinkOtimizacao">Otimização</a>
+        <a href="#modulo-checklist" id="navLinkChecklist">Checklist</a>
+        <a href="#modulo-tarefas" id="navLinkTarefas">Tarefas</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <!-- HERO SECTION -->
+    <section class="hero dark" id="inicio">
+      <div class="orb orb-one" aria-hidden="true"></div>
+      <div class="orb orb-two" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <div class="eyebrow">
+          <span>AULA 03 DE TRÁFEGO PAGO • CASO LEVITALLI</span>
+          <span>MENTORIA DE TRÁFEGO</span>
+        </div>
+        <p class="kicker">COMERCIAL • CRIATIVOS • TOPO DE FUNIL • RECONHECIMENTO • PÚBLICOS • OTIMIZAÇÃO</p>
+        <h1>AULA 3 —<br><em>OTIMIZAÇÃO.</em></h1>
+
+        <!-- Mode Indicator & Switcher Bar -->
+        <div class="study-mode-bar reveal">
+          <div class="study-mode-info">
+            <span class="mode-tag">Modo de Leitura Ativo</span>
+            <p class="mode-title">Você está visualizando: <strong>Estudo Objetivo da Aula</strong></p>
+          </div>
+          <div class="study-mode-actions">
+            <!-- BOTÃO DESTACADO: ABRIR ESTUDO DETALHADO -->
+            <button type="button" class="highlight-detailed-btn" data-study-mode="detalhado" id="btnHeroAbrirDetalhado" aria-label="Abrir Estudo Detalhado">
+              <span>📖 Abrir Estudo Detalhado</span>
+              <b>→</b>
+            </button>
+          </div>
+        </div>
+
+        <!-- Box Objetivo Geral da Aula -->
+        <div class="callout-box" style="margin: 24px 0 28px; padding: 28px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-left: 4px solid var(--orange); border-radius: 8px;">
+          <h2 class="label" style="margin-top:0; color:var(--orange); font-size: 0.95rem; letter-spacing: 0.08em;">Estudo Objetivo da Aula — Otimização de campanhas para negócios locais</h2>
+          <p class="lead" style="margin-bottom: 14px; font-size: 1.15rem; color: #fff;">
+            A otimização deve analisar o sistema inteiro: Criativo → Público → Campanha → Lead → Comercial → Venda → Margem.
+          </p>
+          <div class="flow-strip" style="margin: 16px 0 10px;">
+            <span class="flow-step">Criativo</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Público</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Campanha</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Lead</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Comercial</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Venda</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 800;">Margem</span>
+          </div>
+          <p style="margin: 10px 0 0; color: #c4beaf; font-size: 1rem; line-height: 1.65;">
+            O objetivo não é apenas ter anúncios baratos. O objetivo é gerar demanda suficiente e rentável, testar novos criativos e usar os dados para melhorar as campanhas continuamente.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#modulo-comercial" id="heroBtnComecar">
+            <span>Explorar Estudo Objetivo</span> <b>↓</b>
+          </a>
+          <button type="button" class="button outline" data-study-mode="detalhado">
+            <span>Acessar Estudo Detalhado 📖</span>
+          </button>
+          <button type="button" class="button outline" data-open-aulas style="cursor:pointer;">
+            <span>Trocar de Aula ❖</span>
+          </button>
+          <div class="lesson-meta">
+            <strong>MENTORIA ARTHUR • LEVITALLI</strong>
+            <span>Aula 3 • Otimização • Estudo Objetivo Principal</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Nav Strip -->
+      <div class="chapter-strip reveal" aria-label="Navegação por capítulos">
+        <a href="#modulo-comercial">I. Comercial & Criativo</a>
+        <a href="#modulo-funil">II. Topo de Funil</a>
+        <a href="#modulo-publicos">III. Públicos & Métricas</a>
+        <a href="#modulo-otimizacao">IV. Como Pensar a Otimização</a>
+        <a href="#modulo-checklist">V. Métricas & Checklist</a>
+        <a href="#modulo-tarefas">VI. Tarefas & Resumo</a>
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 1: ESTUDO OBJETIVO DA AULA (PRINCIPAL NA PÁGINA)             -->
+    <!-- ================================================================= -->
+    <div id="viewEstudoObjetivo" class="study-view-container">
+
+      <!-- CAPÍTULO I: COMERCIAL & CRIATIVO -->
+      <section class="paper module" id="modulo-comercial">
+        <div class="section-head reveal">
+          <span class="number">CAP. I</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 1</p>
+            <h2>Comercial e Criativo no Resultado.</h2>
+            <p class="subtitle">Análise antes de mexer no tráfego e o impacto direto do criativo nos custos e contatos.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Tópico 1 -->
+          <article class="learning-card reveal" id="obj-topico-01">
+            <div class="learning-header">
+              <span class="learning-index">01</span>
+              <h3>Primeiro: analise o comercial</h3>
+              <span class="learning-badge">Diagnóstico Comercial</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Antes de mexer no tráfego, veja:</strong></p>
+              <ul style="margin: 10px 0 16px 20px; line-height: 1.8; color: var(--ink);">
+                <li>quantos leads entraram;</li>
+                <li>quantos fecharam;</li>
+                <li>taxa de conversão;</li>
+                <li>ticket médio;</li>
+                <li>margem de lucro.</li>
+              </ul>
+
+              <div class="split" style="gap: 14px; margin: 16px 0;">
+                <div style="padding: 16px 20px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid #ef4444; border-radius: 6px;">
+                  <span class="label" style="margin-top:0; color:#ef4444;">Exemplo A</span>
+                  <p style="margin: 4px 0 0; font-weight: 700; color: var(--ink);">10 leads com 20% de conversão = 2 clientes;</p>
+                </div>
+                <div style="padding: 16px 20px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid #22c55e; border-radius: 6px;">
+                  <span class="label" style="margin-top:0; color:#22c55e;">Exemplo B</span>
+                  <p style="margin: 4px 0 0; font-weight: 700; color: var(--ink);">100 leads com 20% de conversão = 20 clientes.</p>
+                </div>
+              </div>
+
+              <div class="callout-box" style="margin-top: 18px; background: #fff; border-left: 4px solid var(--orange);">
+                <p style="font-size: 1.15rem; font-weight: 800; color: var(--ink); margin: 0;">
+                  Conclusão: às vezes o problema não é a conversão, mas o baixo volume de leads.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tópico 2 -->
+          <article class="learning-card reveal" id="obj-topico-02">
+            <div class="learning-header">
+              <span class="learning-index">02</span>
+              <h3>Criativo influencia diretamente o resultado</h3>
+              <span class="learning-badge">Criativos & UGC</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Um bom criativo ajuda a:</strong></p>
+              <ul style="margin: 10px 0 16px 20px; line-height: 1.8; color: var(--ink);">
+                <li>chamar atenção;</li>
+                <li>gerar confiança;</li>
+                <li>reduzir custo;</li>
+                <li>aumentar contatos.</li>
+              </ul>
+              <p style="font-size: 1.05rem; font-weight: 700; color: var(--ink);">
+                UGC, pessoas reais e vídeos naturais podem funcionar muito bem em negócios locais.
+              </p>
+
+              <div class="callout-box" style="margin: 20px 0; background: #fff; border-left: 4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Pergunta prática</p>
+                <p style="font-size: 1.15rem; font-weight: 800; color: var(--ink); margin-bottom: 6px;">
+                  Se o custo está alto, pergunte: O problema está no público ou no criativo?
+                </p>
+                <p style="color: #444; font-size: 1.05rem; margin: 0; font-weight: 800;">
+                  Muitas vezes, o criativo é o principal fator.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CAPÍTULO II: TOPO DE FUNIL & RECONHECIMENTO X MENSAGENS -->
+      <section class="dark module" id="modulo-funil">
+        <div class="section-head reveal">
+          <span class="number">CAP. II</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 2</p>
+            <h2>Topo de Funil e Reconhecimento.</h2>
+            <p class="subtitle">Como gerar audiência fria e comparar campanhas de reconhecimento com campanhas de mensagens.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Tópico 3 -->
+          <article class="learning-card reveal" id="obj-topico-03">
+            <div class="learning-header">
+              <span class="learning-index">03</span>
+              <h3>3. Use reconhecimento para gerar topo de funil</h3>
+              <span class="learning-badge">Estratégia de Funil</span>
+            </div>
+            <div class="learning-body">
+              <p>Campanhas de reconhecimento servem para colocar mais pessoas em contato com a marca.</p>
+              <p><strong>Fluxo:</strong></p>
+              <div class="flow-strip" style="margin: 16px 0;">
+                <span class="flow-step">Público frio</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">Reconhecimento</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">Visualizações/Interações</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step">Público personalizado</span>
+                <span class="flow-arrow">→</span>
+                <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 800;">Retargeting</span>
+              </div>
+              <p style="color: #d1ccbf; font-weight: 600;">
+                O objetivo não é necessariamente vender imediatamente.
+              </p>
+            </div>
+          </article>
+
+          <!-- Tópico 4 -->
+          <article class="learning-card reveal" id="obj-topico-04">
+            <div class="learning-header">
+              <span class="learning-index">04</span>
+              <h3>4. Reconhecimento x Mensagens</h3>
+              <span class="learning-badge">Comparação Direta</span>
+            </div>
+            <div class="learning-body">
+              <div class="compare reveal" style="margin: 18px 0;">
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 8px; padding: 22px;">
+                  <span style="color: var(--orange); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em;">CAMPANHA DE RECONHECIMENTO</span>
+                  <p style="margin: 8px 0 4px; font-weight: 700; color: #fff;">Objetivo:</p>
+                  <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #d1ccbf;">
+                    <li>alcançar mais pessoas;</li>
+                    <li>gerar visualizações;</li>
+                    <li>criar público;</li>
+                    <li>fortalecer marca.</li>
+                  </ul>
+                </div>
+                <div class="versus">×</div>
+                <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 8px; padding: 22px;">
+                  <span style="color: var(--orange); font-weight: 800; font-size: 0.85rem; letter-spacing: 0.08em;">CAMPANHA DE MENSAGENS</span>
+                  <p style="margin: 8px 0 4px; font-weight: 700; color: #fff;">Objetivo:</p>
+                  <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #d1ccbf;">
+                    <li>gerar contatos;</li>
+                    <li>conversas;</li>
+                    <li>leads.</li>
+                  </ul>
+                </div>
+              </div>
+              <p style="font-size: 1.05rem; font-weight: 700; color: #fff;">
+                Campanhas de reconhecimento normalmente conseguem atingir mais pessoas com o mesmo orçamento.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CAPÍTULO III: PÚBLICOS, ALCANCE, FREQUÊNCIA & CRIATIVOS DE TOPO -->
+      <section class="paper module" id="modulo-publicos">
+        <div class="section-head reveal">
+          <span class="number">CAP. III</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 3</p>
+            <h2>Públicos, Métricas Básicas e Criativos.</h2>
+            <p class="subtitle">Segmentações no negócio local, alcance, impressões, frequência e a abordagem sem CTA agressivo.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Tipos de público -->
+          <article class="learning-card reveal" id="obj-topico-05">
+            <div class="learning-header">
+              <span class="learning-index">05</span>
+              <h3>Tipos de público</h3>
+              <span class="learning-badge">Salvo • Personalizado • Semelhante</span>
+            </div>
+            <div class="learning-body">
+              <div class="cards three" style="margin: 16px 0;">
+                <div class="card" style="background:#fff; border:1px solid var(--paper-border); padding:20px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">PÚBLICO SALVO</p>
+                  <p style="margin:6px 0; font-weight:700; color:var(--ink);">Baseado em:</p>
+                  <ul style="margin:0; padding-left:18px; color:#555; line-height:1.7;">
+                    <li>região;</li>
+                    <li>idade;</li>
+                    <li>gênero;</li>
+                    <li>interesses.</li>
+                  </ul>
+                </div>
+
+                <div class="card" style="background:#fff; border:1px solid var(--paper-border); padding:20px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">PÚBLICO PERSONALIZADO</p>
+                  <p style="margin:6px 0 4px; font-weight:700; color:var(--ink);">Pessoas que já tiveram contato com a empresa.</p>
+                  <p style="margin:4px 0 2px; font-size:0.85rem; color:#777; font-weight:600;">Exemplos:</p>
+                  <ul style="margin:0; padding-left:18px; color:#555; line-height:1.7;">
+                    <li>assistiram vídeos;</li>
+                    <li>interagiram no Instagram;</li>
+                    <li>visitaram páginas.</li>
+                  </ul>
+                </div>
+
+                <div class="card" style="background:#fff; border:1px solid var(--paper-border); padding:20px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">PÚBLICO SEMELHANTE</p>
+                  <p style="margin:6px 0; font-weight:700; color:var(--ink);">Lookalike</p>
+                  <p style="margin:0; color:#555; line-height:1.7;">
+                    O Meta procura pessoas parecidas com uma base existente. Também chamado de Lookalike.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Público aberto -->
+          <article class="learning-card reveal" id="obj-topico-06">
+            <div class="learning-header">
+              <span class="learning-index">06</span>
+              <h3>Público aberto pode funcionar bem</h3>
+              <span class="learning-badge">Liberdade do Algoritmo</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size: 1.05rem; font-weight: 700; color: var(--ink);">
+                Para negócios locais, não é obrigatório segmentar demais.
+              </p>
+              <p><strong>Exemplo:</strong></p>
+              <ul style="margin: 10px 0 16px 20px; line-height: 1.8; color: var(--ink);">
+                <li>região próxima da empresa;</li>
+                <li>raio de alguns quilômetros;</li>
+                <li>faixa etária;</li>
+                <li>público mais aberto.</li>
+              </ul>
+              <div class="callout-box" style="background: rgba(243, 154, 22, 0.08); border-left: 4px solid var(--orange);">
+                <p style="font-weight: 700; color: var(--ink); margin: 0;">
+                  Isso permite que o algoritmo tenha mais liberdade para encontrar pessoas.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alcance, impressões e frequência -->
+          <article class="learning-card reveal" id="obj-topico-07">
+            <div class="learning-header">
+              <span class="learning-index">07</span>
+              <h3>Alcance, impressões e frequência</h3>
+              <span class="learning-badge">Métricas Básicas</span>
+            </div>
+            <div class="learning-body">
+              <div class="metric-grid" style="margin: 18px 0;">
+                <article class="metric reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span>ALCANCE</span>
+                  <strong style="color:var(--ink); font-size:1.6rem;">Pessoas Únicas</strong>
+                  <p style="color:#555;">Número de pessoas únicas que visualizaram o anúncio.</p>
+                </article>
+                <article class="metric highlight reveal" style="background:#fff; border:1px solid var(--orange);">
+                  <span style="color:var(--orange);">IMPRESSÕES</span>
+                  <strong style="color:var(--ink); font-size:1.6rem;">Total de Vezes</strong>
+                  <p style="color:#555;">Quantidade total de vezes que o anúncio apareceu.</p>
+                </article>
+                <article class="metric reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span>FREQUÊNCIA</span>
+                  <strong style="color:var(--ink); font-size:1.6rem;">Média por Pessoa</strong>
+                  <p style="color:#555;">Quantas vezes, em média, cada pessoa viu o anúncio.</p>
+                </article>
+              </div>
+
+              <div class="callout-box" style="background:#fff; border:1px solid var(--paper-border); border-left:4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="margin:0 0 6px; font-weight:700; color:var(--ink);">Uma pessoa vê o anúncio 3 vezes:</p>
+                <p style="margin:0; color:#555; line-height:1.7;">
+                  • alcance: 1;<br>
+                  • impressões: 3;<br>
+                  • frequência: 3.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Criativos de reconhecimento -->
+          <article class="learning-card reveal" id="obj-topico-08">
+            <div class="learning-header">
+              <span class="learning-index">08</span>
+              <h3>Criativos de reconhecimento</h3>
+              <span class="learning-badge">Sem CTA Agressivo</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size: 1.05rem; font-weight: 700; color: var(--ink);">
+                Criativos de reconhecimento não precisam de CTA agressivo.
+              </p>
+              <div class="split" style="gap: 16px; margin: 18px 0;">
+                <div style="padding: 18px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid #ef4444; border-radius: 6px;">
+                  <strong style="color: #ef4444; display: block; margin-bottom: 6px;">Evite chamadas como:</strong>
+                  <p style="margin: 0; font-weight: 700; color: var(--ink);">“Clique no link agora.”</p>
+                </div>
+                <div style="padding: 18px; background: #fff; border: 1px solid var(--paper-border); border-left: 4px solid #22c55e; border-radius: 6px;">
+                  <strong style="color: #22c55e; display: block; margin-bottom: 6px;">Prefira:</strong>
+                  <ul style="margin: 0; padding-left: 18px; color: var(--ink); line-height: 1.6;">
+                    <li>conteúdo interessante;</li>
+                    <li>dor do cliente;</li>
+                    <li>informação;</li>
+                    <li>identificação;</li>
+                    <li>retenção.</li>
+                  </ul>
+                </div>
+              </div>
+              <p style="font-weight: 700; color: var(--ink);">
+                CTA mais forte pode ficar para campanhas de conversão ou mensagens.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CAPÍTULO IV: ORGANIZAÇÃO, DUPLICAÇÃO & COMO PENSAR UMA OTIMIZAÇÃO -->
+      <section class="dark module" id="modulo-otimizacao">
+        <div class="section-head reveal">
+          <span class="number">CAP. IV</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 4</p>
+            <h2>Organização e o Método de Otimização.</h2>
+            <p class="subtitle">Nomenclatura clara, duplicação isolada de variáveis, Advantage, amostras e a sequência de decisão.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Organize as campanhas -->
+          <article class="learning-card reveal" id="obj-topico-09">
+            <div class="learning-header">
+              <span class="learning-index">09</span>
+              <h3>Organize as campanhas</h3>
+              <span class="learning-badge">Nomenclatura Limpa</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-weight: 700; color: #fff;">Use nomes claros.</p>
+              <div class="split" style="gap: 16px; margin: 18px 0;">
+                <div style="padding: 18px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 6px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">Exemplo de Padrão</p>
+                  <p style="margin:4px 0; color:#fff;"><strong>CMP</strong> = Campanha</p>
+                  <p style="margin:4px 0; color:#fff;"><strong>CJ</strong> = Conjunto de anúncios</p>
+                  <p style="margin:4px 0; color:#fff;"><strong>CV</strong> = Criativo</p>
+                </div>
+                <div style="padding: 18px; background: rgba(243,154,22,0.08); border: 1px solid rgba(243,154,22,0.3); border-radius: 6px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">Exemplo Aplicado</p>
+                  <p style="margin:4px 0; color:#fff;">CMP — Mensagens</p>
+                  <p style="margin:4px 0; color:#fff;">CJ 01 — Público aberto</p>
+                  <p style="margin:4px 0; color:var(--orange); font-weight:700;">CV 01 — Pele irritada</p>
+                </div>
+              </div>
+
+              <div class="callout-box" style="background: rgba(255,255,255,0.02); border-left: 4px solid #ef4444;">
+                <p><strong style="color: #ef4444; font-size: 1rem; display: block; margin-bottom: 6px;">Evite nomes como:</strong></p>
+                <p style="margin: 0; color: #d1ccbf;">• “Anúncio 1”;<br>• “Cópia”;<br>• “Novo conjunto”.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Duplique o que já está funcionando -->
+          <article class="learning-card reveal" id="obj-topico-10">
+            <div class="learning-header">
+              <span class="learning-index">10</span>
+              <h3>Duplique o que já está funcionando</h3>
+              <span class="learning-badge">Isolamento de Variáveis</span>
+            </div>
+            <div class="learning-body">
+              <p>Se um conjunto possui:</p>
+              <ul style="margin: 8px 0 14px 20px; line-height: 1.8; color: #d1ccbf;">
+                <li>mais resultados;</li>
+                <li>menor custo;</li>
+              </ul>
+              <p style="color: #fff; font-weight: 700;">ele pode servir como base para um novo teste.</p>
+
+              <div class="callout-box" style="margin: 16px 0; background: rgba(255,255,255,0.03); border-left: 4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="margin:0; color:#fff; font-weight:700;">
+                  Conjunto vencedor → duplicar → mudar apenas o público → comparar os resultados.
+                </p>
+              </div>
+              <p style="color: var(--orange); font-weight: 800; font-size: 1.05rem;">
+                Não altere muitas variáveis ao mesmo tempo.
+              </p>
+            </div>
+          </article>
+
+          <!-- Público Advantage não é posicionamento Advantage -->
+          <article class="learning-card reveal" id="obj-topico-11">
+            <div class="learning-header">
+              <span class="learning-index">11</span>
+              <h3>Público Advantage não é posicionamento Advantage</h3>
+              <span class="learning-badge">Conceitos Meta Ads</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 16px;">
+                São coisas diferentes.
+              </p>
+              <div class="split" style="gap: 16px; margin: 18px 0;">
+                <div style="padding: 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-left: 4px solid var(--orange); border-radius: 6px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">Público Advantage</p>
+                  <p style="margin: 6px 0 0; font-size: 1.05rem; font-weight: 700; color: #fff;">
+                    Relacionado a quem verá o anúncio.
+                  </p>
+                </div>
+                <div style="padding: 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-left: 4px solid var(--orange); border-radius: 6px;">
+                  <p class="label" style="margin-top:0; color:var(--orange);">Posicionamento Advantage</p>
+                  <p style="margin: 6px 0 0; font-size: 1.05rem; font-weight: 700; color: #fff;">
+                    Relacionado a onde o anúncio será exibido.
+                  </p>
+                  <p style="color: #d1ccbf; font-size: 0.95rem; margin-top: 6px;">
+                    Exemplos: Instagram, Facebook, Feed, Stories, Reels.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Não tire conclusão com poucos dados -->
+          <article class="learning-card reveal" id="obj-topico-12">
+            <div class="learning-header">
+              <span class="learning-index">12</span>
+              <h3>Não tire conclusão com poucos dados</h3>
+              <span class="learning-badge">Amostragem</span>
+            </div>
+            <div class="learning-body">
+              <div class="callout-box" style="background: rgba(255,255,255,0.03); border-left: 4px solid var(--orange); margin: 16px 0;">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="margin: 0 0 6px; font-weight: 700; color: #fff; font-size: 1.1rem;">
+                  10 leads e 2 vendas = 20% de conversão.
+                </p>
+                <p style="margin: 0; color: #d1ccbf;">
+                  Mas 10 leads ainda representam uma amostra pequena.
+                </p>
+              </div>
+              <p style="font-size: 1.1rem; font-weight: 800; color: #fff;">
+                Quanto maior a quantidade de dados, mais confiável será a análise.
+              </p>
+            </div>
+          </article>
+
+          <!-- Teste novos criativos constantemente -->
+          <article class="learning-card reveal" id="obj-topico-13">
+            <div class="learning-header">
+              <span class="learning-index">13</span>
+              <h3>Teste novos criativos constantemente</h3>
+              <span class="learning-badge">Ângulos & Testes</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Alguns exemplos de ângulos trabalhados:</strong></p>
+              <div class="cards three" style="margin: 16px 0;">
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">pele irritada;</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Dor imediata do cliente.</p>
+                </div>
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">uso de lâmina;</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Hábito incômodo.</p>
+                </div>
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">sessões gratuitas;</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Experimentação e valor.</p>
+                </div>
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">UGC;</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Vídeos espontâneos.</p>
+                </div>
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">diferentes CTAs;</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Chamadas diretas vs suaves.</p>
+                </div>
+                <div class="card" style="background:rgba(255,255,255,0.03); border:1px solid var(--line); padding:16px;">
+                  <strong style="color:var(--orange);">diferentes pessoas nos vídeos.</strong>
+                  <p style="margin:4px 0 0; color:#d1ccbf; font-size:0.9rem;">Variedade de identificação.</p>
+                </div>
+              </div>
+              <p style="font-weight: 700; color: #fff;">
+                O objetivo é descobrir quais mensagens geram mais atenção e resultado.
+              </p>
+            </div>
+          </article>
+
+          <!-- Crie variações de legenda -->
+          <article class="learning-card reveal" id="obj-topico-14">
+            <div class="learning-header">
+              <span class="learning-index">14</span>
+              <h3>Crie variações de legenda</h3>
+              <span class="learning-badge">Copywriting</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-weight: 700; color: #fff;">
+                Você pode usar o mesmo criativo com diferentes abordagens.
+              </p>
+              <div class="callout-box" style="background: rgba(255,255,255,0.03); border-left: 4px solid var(--orange); margin: 16px 0;">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="color: #fff; margin-bottom: 8px;">
+                  Um vídeo sobre depilação pode ter legendas focadas em:
+                </p>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px;">
+                  <span style="background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 4px; font-weight: 600;">• irritação;</span>
+                  <span style="background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 4px; font-weight: 600;">• parar de usar gilete;</span>
+                  <span style="background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 4px; font-weight: 600;">• conforto;</span>
+                  <span style="background: rgba(255,255,255,0.08); padding: 4px 10px; border-radius: 4px; font-weight: 600;">• praticidade;</span>
+                  <span style="background: rgba(243,154,22,0.2); color: var(--orange); padding: 4px 10px; border-radius: 4px; font-weight: 700;">• resultado.</span>
+                </div>
+              </div>
+              <p style="font-weight: 700; color: #fff;">
+                Assim você testa diferentes ângulos de comunicação.
+              </p>
+            </div>
+          </article>
+
+          <!-- Como pensar uma otimização -->
+          <article class="learning-card reveal" id="obj-topico-15">
+            <div class="learning-header">
+              <span class="learning-index">15</span>
+              <h3>Como pensar uma otimização</h3>
+              <span class="learning-badge">Sequência de Decisão</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size: 1.05rem; font-weight: 700; color: #fff;">
+                Use esta sequência:
+              </p>
+              <div class="timeline reveal" style="margin: 24px 0;">
+                <div><span>01</span><strong>Veja os resultados.</strong><p>Analise os números consolidados sem pressa.</p></div>
+                <div><span>02</span><strong>Identifique o que está caro.</strong><p>Localize métricas e conjuntos fora da margem.</p></div>
+                <div><span>03</span><strong>Identifique o que está funcionando.</strong><p>Encontre os criativos com tração real.</p></div>
+                <div><span>04</span><strong>Pause o que não faz sentido manter.</strong><p>Corte custos desnecessários sem hesitar.</p></div>
+                <div><span>05</span><strong>Preserve o vencedor.</strong><p>Não altere o conjunto que está convertendo bem.</p></div>
+                <div><span>06</span><strong>Duplique para criar novos testes.</strong><p>Altere apenas uma variável no novo conjunto.</p></div>
+                <div><span>07</span><strong>Adicione novos criativos.</strong><p>Injete novos ângulos de comunicação no fluxo.</p></div>
+                <div><span>08</span><strong>Aguarde novos dados.</strong><p>Dê tempo para a amostra amadurecer.</p></div>
+                <div><span>09</span><strong>Analise novamente.</strong><p>Repita o ciclo com método e disciplina.</p></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CAPÍTULO V: MÉTRICAS & CHECKLIST RÁPIDO DE OTIMIZAÇÃO -->
+      <section class="paper module" id="modulo-checklist">
+        <div class="section-head reveal">
+          <span class="number">CAP. V</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 5</p>
+            <h2>Métricas e Checklist de Otimização.</h2>
+            <p class="subtitle">O que acompanhar nos negócios locais, a diferença para infoprodutos e as perguntas essenciais.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Métricas importantes para negócios locais -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">M</span>
+              <h3>Métricas importantes para negócios locais</h3>
+              <span class="learning-badge">Painel de Métricas</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Acompanhe principalmente:</strong></p>
+              <ul style="margin: 10px 0 16px 20px; line-height: 1.8; color: var(--ink);">
+                <li>quantidade de leads;</li>
+                <li>custo por lead;</li>
+                <li>custo por mensagem;</li>
+                <li>taxa de conversão;</li>
+                <li>ticket médio;</li>
+                <li>margem;</li>
+                <li>custo dos conjuntos;</li>
+                <li>desempenho dos criativos.</li>
+              </ul>
+              <div class="callout-box" style="background:#fff; border-left:4px solid var(--orange);">
+                <p style="font-size: 1.15rem; font-weight: 800; color: var(--ink); margin: 0;">
+                  Não analise apenas métricas isoladas.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Negócio local não é igual a infoproduto -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">VS</span>
+              <h3>Negócio local não é igual a infoproduto</h3>
+              <span class="learning-badge">Modelo de Negócio</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Estratégias mudam conforme:</strong></p>
+              <ul style="margin: 10px 0 16px 20px; line-height: 1.8; color: var(--ink);">
+                <li>modelo de negócio;</li>
+                <li>orçamento;</li>
+                <li>objetivo;</li>
+                <li>tipo de venda.</li>
+              </ul>
+              <div class="callout-box" style="background: rgba(243, 154, 22, 0.08); border-left: 4px solid var(--orange);">
+                <p style="font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 6px;">
+                  Uma estrutura que funciona para negócio local pode não ser a ideal para infoprodutos.
+                </p>
+                <p style="color: #444; margin: 0; font-weight: 800;">
+                  Por isso, evite aplicar regras universais.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Checklist rápido de otimização -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">✓</span>
+              <h3>Checklist rápido de otimização</h3>
+              <span class="learning-badge">Perguntas Obrigatórias</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 16px;">
+                Antes de alterar uma campanha, pergunte:
+              </p>
+              <div class="task-list" style="margin: 18px 0;">
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">01</span>
+                  <div><h3 style="color:var(--ink);">Quantos leads entraram?</h3></div>
+                  <b style="color:#555;">LEADS</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">02</span>
+                  <div><h3 style="color:var(--ink);">Quantos compraram?</h3></div>
+                  <b style="color:#555;">VENDAS</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">03</span>
+                  <div><h3 style="color:var(--ink);">Qual a taxa de conversão?</h3></div>
+                  <b style="color:#555;">CONVERSÃO</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">04</span>
+                  <div><h3 style="color:var(--ink);">Qual o ticket?</h3></div>
+                  <b style="color:#555;">TICKET</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">05</span>
+                  <div><h3 style="color:var(--ink);">Qual a margem?</h3></div>
+                  <b style="color:#555;">MARGEM</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">06</span>
+                  <div><h3 style="color:var(--ink);">Qual conjunto está mais barato?</h3></div>
+                  <b style="color:#555;">VENCEDOR</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">07</span>
+                  <div><h3 style="color:var(--ink);">Qual está mais caro?</h3></div>
+                  <b style="color:#555;">CARO</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">08</span>
+                  <div><h3 style="color:var(--ink);">Qual criativo gera mais resultado?</h3></div>
+                  <b style="color:#555;">CRIATIVO</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">09</span>
+                  <div><h3 style="color:var(--ink);">Já existe volume suficiente de dados?</h3></div>
+                  <b style="color:#555;">DADOS</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">10</span>
+                  <div><h3 style="color:var(--ink);">Preciso testar novo criativo?</h3></div>
+                  <b style="color:#555;">NOVO TESTE</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">11</span>
+                  <div><h3 style="color:var(--ink);">Preciso gerar mais topo de funil?</h3></div>
+                  <b style="color:#555;">TOPO</b>
+                </article>
+                <article class="task reveal" style="background:#fff; border:1px solid var(--paper-border);">
+                  <span style="color:var(--orange);">12</span>
+                  <div><h3 style="color:var(--ink);">Tenho público suficiente para retargeting?</h3></div>
+                  <b style="color:#555;">RETARGETING</b>
+                </article>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CAPÍTULO VI: TAREFAS APÓS A AULA & RESUMO -->
+      <section class="dark module" id="modulo-tarefas">
+        <div class="section-head reveal">
+          <span class="number">CAP. VI</span>
+          <div>
+            <p class="label">ESTUDO OBJETIVO • PARTE 6</p>
+            <h2>Tarefas e Resumo da Aula.</h2>
+            <p class="subtitle">Ações práticas para Arthur, aluna/equipe e o encerramento do Estudo Objetivo.</p>
+          </div>
+        </div>
+
+        <div class="split" style="gap: 24px; margin-bottom: 40px;">
+          <article class="learning-card reveal" style="padding: 26px;">
+            <p class="label" style="color: var(--orange); margin-top:0;">Tarefas após a aula</p>
+            <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 14px;">Arthur</h3>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.9; color: #d1ccbf;">
+              <li>Disponibilizar a gravação da aula.</li>
+              <li>Enviar os links e materiais necessários.</li>
+            </ul>
+          </article>
+
+          <article class="learning-card reveal" style="padding: 26px; border-left: 4px solid var(--orange);">
+            <p class="label" style="color: var(--orange); margin-top:0;">Tarefas após a aula</p>
+            <h3 style="font-size: 1.3rem; color: #fff; margin-bottom: 14px;">Aluna/equipe</h3>
+            <ul style="margin: 0; padding-left: 20px; line-height: 1.9; color: #d1ccbf;">
+              <li>Editar os vídeos solicitados.</li>
+              <li>Atualizar os criativos.</li>
+              <li>Substituir materiais quando as novas versões forem entregues.</li>
+              <li>Manter a campanha de reconhecimento ativa.</li>
+              <li>Acompanhar novos leads e custos.</li>
+              <li>Analisar o desempenho dos novos públicos e criativos.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Resumo da aula -->
+        <div class="callout-box reveal" style="padding: 34px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-left: 5px solid var(--orange); border-radius: 8px;">
+          <p class="label" style="margin-top:0; color:var(--orange);">Resumo da aula</p>
+          <p style="font-size: 1.15rem; color: #fff; font-weight: 700; margin-bottom: 14px;">
+            A otimização deve analisar o sistema inteiro:
+          </p>
+          <div class="flow-strip" style="margin: 14px 0 20px;">
+            <span class="flow-step">Criativo</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Público</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Campanha</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Lead</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Comercial</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step">Venda</span>
+            <span class="flow-arrow">→</span>
+            <span class="flow-step" style="border-color: var(--orange); color: var(--orange); font-weight: 800;">Margem</span>
+          </div>
+          <p style="font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 8px;">
+            O objetivo não é apenas ter anúncios baratos.
+          </p>
+          <p style="color: #d1ccbf; font-size: 1.05rem; line-height: 1.7; margin: 0;">
+            O objetivo é gerar demanda suficiente e rentável, testar novos criativos e usar os dados para melhorar as campanhas continuamente.
+          </p>
+        </div>
+
+        <!-- BANNER DE ACESSO AO ESTUDO DETALHADO -->
+        <div class="study-mode-bar reveal" style="margin-top: 50px;">
+          <div class="study-mode-info">
+            <span class="mode-tag">Aprofundamento Completo</span>
+            <p class="mode-title">Deseja conferir a análise minuciosa de cada tópico da mentoria?</p>
+          </div>
+          <div class="study-mode-actions">
+            <button type="button" class="highlight-detailed-btn" data-study-mode="detalhado">
+              <span>📖 Abrir Estudo Detalhado da Aula</span>
+              <b>→</b>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Aulas Switcher Bar -->
+        <div class="editorial-box reveal" style="margin-top: 50px; text-align: center; padding: 40px 24px;">
+          <p class="label" style="margin-top:0;">CONTINUIDADE DA MENTORIA</p>
+          <h3 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--ink);">Navegue entre os Módulos da Mentoria</h3>
+          <p style="max-width: 600px; margin: 0 auto 24px; color: #555;">Você pode alternar entre a Aula 1 (Fundamentos), a Aula 2 (Criativos) e a Aula 3 (Otimização) a qualquer momento.</p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="index.html" class="button outline">
+              <span>← Ir para Aula 1</span>
+            </a>
+            <a href="aula-02.html" class="button outline">
+              <span>← Ir para Aula 2</span>
+            </a>
+            <button type="button" class="button primary" data-open-aulas>
+              <span>Ver Todas as Aulas ❖</span>
+            </button>
+          </div>
+        </div>
+
+        <footer>
+          <a class="brand" href="#inicio" aria-label="Voltar ao início">
+            <span>LEVITALLI</span><i></i>
+          </a>
+          <p>Mentoria de Tráfego Pago · Arthur · Caso Clínico Levitalli · 2026</p>
+        </footer>
+      </section>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- VIEW 2: ESTUDO DETALHADO DA AULA (ABRE AO CLICAR NO BOTÃO)        -->
+    <!-- ================================================================= -->
+    <div id="viewEstudoDetalhado" class="study-view-container" hidden>
+      <section class="paper module" id="estudo-detalhado">
+        <div class="section-head reveal">
+          <span class="number">DETALHADO</span>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:8px;">
+              <p class="label" style="margin:0;">ESTUDO DETALHADO DA AULA</p>
+              <button type="button" class="button outline small" data-study-mode="objetivo" style="color:var(--ink); border-color:var(--ink);">
+                <span>← Voltar ao Estudo Objetivo</span>
+              </button>
+            </div>
+            <h2>Aula — Otimização de campanhas para negócios locais</h2>
+            <p class="subtitle">Transcrição técnica e aprofundamento de todos os 32 tópicos, análises de bastidores, configurações práticas e orientações de Arthur.</p>
+          </div>
+        </div>
+
+        <div class="learnings-stack">
+          <!-- Detalhe 1 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">01</span>
+              <h3>Diagnóstico comercial antes de mexer no tráfego</h3>
+              <span class="learning-badge">Aprofundamento 01</span>
+            </div>
+            <div class="learning-body">
+              <p>Antes de otimizar campanhas, é importante entender o que está acontecendo no comercial.</p>
+              <p>Na semana analisada, entraram 7 novos contatos, mas nenhum fechou um plano naquele período. Houve, porém, início de atendimento avulso.</p>
+              <p>Arthur destacou que o principal problema naquele momento não era necessariamente a capacidade de fechamento, mas o baixo volume de demanda.</p>
+              <p>Uma taxa de conversão pode ser considerada saudável e, ainda assim, gerar poucos fechamentos se poucas pessoas entrarem em contato.</p>
+              <div class="callout-box" style="margin:16px 0; background:#fff; border-left:4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="margin:0 0 4px; font-weight:700; color:var(--ink);">10 contatos com conversão de 20% = 2 clientes.</p>
+                <p style="margin:0; font-weight:700; color:var(--ink);">100 contatos com conversão de 20% = 20 clientes.</p>
+              </div>
+              <p>Por isso, antes de concluir que o comercial está ruim, é necessário analisar:</p>
+              <ul style="margin:8px 0 16px 20px; line-height:1.8; color:var(--ink);">
+                <li>quantidade de leads;</li>
+                <li>quantidade de fechamentos;</li>
+                <li>taxa de conversão;</li>
+                <li>ticket médio;</li>
+                <li>margem da operação.</li>
+              </ul>
+              <div class="callout-box" style="background:rgba(243,154,22,0.08); border-left:4px solid var(--orange);">
+                <p><strong style="color:var(--orange); font-size:1.05rem; display:block; margin-bottom:4px;">Ponto importante: Não olhe apenas para faturamento.</strong></p>
+                <p style="margin:0; color:var(--ink); font-weight:700;">
+                  Um plano de R$ 2.000 não representa R$ 2.000 de lucro. Para avaliar se a campanha faz sentido financeiramente, também é necessário conhecer a margem do serviço.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Detalhe 2 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">02</span>
+              <h3>Relação entre confiança, criativo e fechamento</h3>
+              <span class="learning-badge">Aprofundamento 02</span>
+            </div>
+            <div class="learning-body">
+              <p>Foi analisado um fechamento de aproximadamente R$ 2.000 vindo de uma cliente que já conhecia a pessoa presente no criativo UGC.</p>
+              <p>Isso demonstra como elementos de confiança podem influenciar a decisão.</p>
+              <p><strong>Em negócios locais, criativos com:</strong></p>
+              <ul style="margin:8px 0 14px 20px; line-height:1.8; color:var(--ink);">
+                <li>pessoas conhecidas;</li>
+                <li>clientes;</li>
+                <li>profissionais da empresa;</li>
+                <li>UGC;</li>
+                <li>depoimentos;</li>
+                <li>linguagem natural</li>
+              </ul>
+              <p>podem ajudar a reduzir a distância entre anúncio e consumidor.</p>
+              <p style="font-weight:700; color:var(--ink);">
+                O criativo não deve ser analisado apenas como uma peça bonita. Ele influencia diretamente: confiança; atenção; custo do tráfego; intenção de contato.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 3 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">03</span>
+              <h3>3. Estratégia de topo de funil</h3>
+              <span class="learning-badge">Aprofundamento 03</span>
+            </div>
+            <div class="learning-body">
+              <p>Como o volume de demanda estava baixo, Arthur propôs aumentar a quantidade de pessoas entrando no ecossistema da empresa.</p>
+              <p>Para isso, foi criada uma estratégia de campanha de reconhecimento.</p>
+              <p><strong>A lógica é simples:</strong></p>
+              <div class="callout-box" style="margin:14px 0; background:#fff; border-left:4px solid var(--orange);">
+                <p style="margin:0; font-weight:700; color:var(--ink);">
+                  Reconhecimento → pessoas conhecem a empresa → públicos são formados → posteriormente essas pessoas podem receber campanhas de conversão ou mensagens.
+                </p>
+              </div>
+              <p>Não se espera necessariamente uma venda imediata dessa campanha.</p>
+              <p style="font-weight:800; color:var(--ink);">O papel dela é alimentar o topo do funil.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 4 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">04</span>
+              <h3>Campanha de reconhecimento x campanha de mensagens</h3>
+              <span class="learning-badge">Aprofundamento 04</span>
+            </div>
+            <div class="learning-body">
+              <p>Campanhas diferentes possuem custos e objetivos diferentes.</p>
+              <p>Na análise apresentada, campanhas de mensagens estavam alcançando um CPM mais elevado, enquanto campanhas de reconhecimento conseguiam comprar impressões por um custo muito menor.</p>
+              <div class="split" style="gap:14px; margin:16px 0;">
+                <div style="padding:16px; background:#fff; border:1px solid var(--paper-border); border-radius:6px;">
+                  <span class="label" style="margin-top:0;">Mensagens</span>
+                  <p style="margin:4px 0 0; font-weight:800; color:var(--ink);">CPM aproximadamente entre R$ 14 e R$ 15;</p>
+                </div>
+                <div style="padding:16px; background:#fff; border:1px solid var(--paper-border); border-radius:6px;">
+                  <span class="label" style="margin-top:0; color:var(--orange);">Reconhecimento</span>
+                  <p style="margin:4px 0 0; font-weight:800; color:var(--orange);">possibilidade de CPM próximo de R$ 2 a R$ 4, dependendo da campanha.</p>
+                </div>
+              </div>
+              <p>Com orçamento baixo, reconhecimento permite colocar a marca diante de muito mais pessoas.</p>
+              <div class="callout-box" style="margin-top:16px; background:rgba(243,154,22,0.08); border-left:4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo de projeção</p>
+                <p style="margin:0 0 6px; font-weight:700; color:var(--ink);">Com: R$ 10 por dia durante 7 dias → o investimento seria: R$ 70.</p>
+                <p style="margin:0; color:#444;">
+                  Em um cenário de CPM próximo de R$ 4, seria possível gerar dezenas de milhares de impressões e atingir aproximadamente 15 mil a 20 mil pessoas, dependendo de frequência e distribuição.
+                </p>
+                <small style="display:block; margin-top:6px; color:#777;">Esses valores são projeções, não garantias.</small>
+              </div>
+            </div>
+          </article>
+
+          <!-- Detalhe 5 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">05</span>
+              <h3>O objetivo é popular públicos</h3>
+              <span class="learning-badge">Aprofundamento 05</span>
+            </div>
+            <div class="learning-body">
+              <p>Uma das funções mais importantes de campanhas de reconhecimento é popular públicos personalizados.</p>
+              <p><strong>Exemplo:</strong> Você roda vídeos para milhares de pessoas. Depois pode criar um público contendo: <em>Pessoas que assistiram 50% ou mais dos vídeos</em>.</p>
+              <p>Esse grupo demonstrou algum nível de interesse e pode ser utilizado posteriormente em campanhas de retargeting.</p>
+              <p style="font-weight:700; color:var(--ink);">
+                A estratégia funciona como uma sequência: Público frio → reconhecimento → interação/visualização → público personalizado → retargeting.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 6 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">06</span>
+              <h3>Tipos de público no Meta Ads</h3>
+              <span class="learning-badge">Aprofundamento 06</span>
+            </div>
+            <div class="learning-body">
+              <p>Arthur explicou três categorias importantes.</p>
+              <p><strong>Público salvo:</strong> É um público criado a partir de configurações como localização; idade; gênero; interesses; outras segmentações. Exemplo: Mulheres entre determinada faixa etária em um raio específico da empresa.</p>
+              <p><strong>Público personalizado:</strong> É construído a partir de pessoas que já tiveram algum contato com a empresa. Exemplos: assistiram aos vídeos; interagiram com o Instagram; visitaram determinado ambiente digital; fazem parte de alguma base disponível na plataforma. Um exemplo discutido foi: Pessoas que visualizaram 50% ou mais de determinados vídeos nos últimos 365 dias.</p>
+              <p><strong>Público semelhante — Lookalike:</strong> O Meta utiliza uma base existente para procurar outras pessoas com comportamento ou características semelhantes. Exemplos: semelhante de 1%; semelhante de 2%. Quanto menor o percentual, normalmente maior é a proximidade com o público utilizado como origem.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 7 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">07</span>
+              <h3>Público aberto para negócios locais</h3>
+              <span class="learning-badge">Aprofundamento 07</span>
+            </div>
+            <div class="learning-body">
+              <p>Na campanha de reconhecimento, foi discutida a utilização de um público bastante aberto.</p>
+              <p><strong>Exemplo:</strong></p>
+              <ul style="margin:8px 0 14px 20px; line-height:1.8; color:var(--ink);">
+                <li>região central de Betim;</li>
+                <li>raio entre aproximadamente 5 e 7 km;</li>
+                <li>sem interesses;</li>
+                <li>segmentação mais ampla.</li>
+              </ul>
+              <p style="color:#444;">
+                A ideia é permitir que o algoritmo encontre pessoas dentro da região, evitando restringir demais um negócio local com orçamento limitado.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 8 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">08</span>
+              <h3>Configuração prática da campanha de reconhecimento</h3>
+              <span class="learning-badge">Aprofundamento 08</span>
+            </div>
+            <div class="learning-body">
+              <p>Foi criada uma campanha com objetivo de reconhecimento de marca. Entre as configurações utilizadas na aula:</p>
+              <ul style="margin:8px 0 14px 20px; line-height:1.8; color:var(--ink);">
+                <li>leilão padrão;</li>
+                <li>orçamento de aproximadamente R$ 10 por dia;</li>
+                <li>orçamento Advantage no nível da campanha;</li>
+                <li>controle de frequência;</li>
+                <li>localização próxima ao estabelecimento;</li>
+                <li>público predominantemente feminino;</li>
+                <li>faixa etária definida conforme perfil do negócio;</li>
+                <li>posicionamento focado principalmente no Instagram;</li>
+                <li>Facebook e Audience Network removidos em determinados testes.</li>
+              </ul>
+              <p style="font-weight:700; color:var(--ink);">
+                A configuração deve sempre respeitar o contexto da empresa e os dados existentes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 9 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">09</span>
+              <h3>Alcance x impressões</h3>
+              <span class="learning-badge">Aprofundamento 09</span>
+            </div>
+            <div class="learning-body">
+              <p>Essas duas métricas não representam a mesma coisa.</p>
+              <p><strong>Alcance:</strong> Quantidade de pessoas únicas que visualizaram o anúncio.</p>
+              <p><strong>Impressões:</strong> Quantidade total de vezes em que o anúncio foi exibido.</p>
+              <div class="callout-box" style="margin:14px 0; background:#fff; border-left:4px solid var(--orange);">
+                <p class="label" style="margin-top:0; color:var(--orange);">Exemplo:</p>
+                <p style="margin:0; font-weight:700; color:var(--ink);">Uma pessoa viu o anúncio três vezes. Resultado: alcance: 1; impressões: 3.</p>
+              </div>
+              <p style="color:#444;">
+                A relação entre essas métricas ajuda a entender a frequência com que o público está vendo o anúncio.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 10 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">10</span>
+              <h3>Controle de frequência</h3>
+              <span class="learning-badge">Aprofundamento 10</span>
+            </div>
+            <div class="learning-body">
+              <p>Em campanhas de reconhecimento, foi utilizada uma configuração semelhante a:</p>
+              <div class="quote" style="margin:12px 0; background:#fff; border-left-color:var(--orange);">
+                <strong style="color:var(--ink); font-size:1.1rem; display:block;">3 exibições a cada 7 dias.</strong>
+              </div>
+              <p>O objetivo é evitar que uma mesma pessoa receba o anúncio excessivamente dentro de um curto período.</p>
+              <p>Frequência deve ser controlada para equilibrar repetição suficiente para gerar lembrança e evitar saturação.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 11 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">11</span>
+              <h3>11. TruePlay e retenção de vídeo</h3>
+              <span class="learning-badge">Aprofundamento 11</span>
+            </div>
+            <div class="learning-body">
+              <p>Para reconhecimento, foi escolhida uma otimização relacionada à visualização de vídeo.</p>
+              <p>A lógica apresentada é fazer o Meta buscar pessoas com maior probabilidade de assistir uma parcela relevante do conteúdo.</p>
+              <p style="color:#444;">
+                Isso ajuda posteriormente na criação de públicos personalizados baseados em visualizações.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 12 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">12</span>
+              <h3>Criativos de reconhecimento não precisam ter CTA agressivo</h3>
+              <span class="learning-badge">Aprofundamento 12</span>
+            </div>
+            <div class="learning-body">
+              <p>Um dos vídeos utilizados terminava com uma chamada semelhante a: <em>“Clique no link.”</em></p>
+              <p>Arthur orientou remover essa chamada no criativo de reconhecimento. Motivo: O objetivo daquele anúncio não era gerar conversão direta. Era: gerar atenção; apresentar a empresa; aumentar conhecimento; formar público.</p>
+              <p>Foi sugerido finalizar o vídeo naturalmente e utilizar um efeito de fade-out.</p>
+              <div class="callout-box" style="margin-top:14px; background:#fff; border-left:4px solid var(--orange);">
+                <p style="margin:0; font-weight:700; color:var(--ink);">
+                  Regra prática: Reconhecimento: conteúdo e retenção. Conversão/mensagens: chamada para ação mais direta.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Detalhe 13 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">13</span>
+              <h3>Formatos de vídeo aceitos pelo Meta</h3>
+              <span class="learning-badge">Aprofundamento 13</span>
+            </div>
+            <div class="learning-body">
+              <p>Durante o upload dos criativos, houve dificuldade com formatos de arquivo.</p>
+              <p>A plataforma trabalha melhor com extensões compatíveis, como: <strong>MP4</strong> e <strong>MOV</strong>.</p>
+              <p>Quando o arquivo estiver em outro formato, pode ser necessário convertê-lo. Na aula foi citado o uso de conversores online, como o Convertio. Sempre confira qualidade e resolução depois da conversão.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 14 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">14</span>
+              <h3>Erros e bugs do Gerenciador de Anúncios</h3>
+              <span class="learning-badge">Aprofundamento 14</span>
+            </div>
+            <div class="learning-body">
+              <p>Durante a configuração, apareceram campos e avisos aparentemente inconsistentes, relacionados a elementos que nem estavam sendo utilizados na campanha.</p>
+              <p>Arthur destacou que o Gerenciador de Anúncios pode apresentar bugs ou mensagens incoerentes. Quando isso acontecer: revise a configuração; confirme se o campo realmente é obrigatório; tente publicar novamente; recarregue a plataforma se necessário; diferencie erro de configuração de erro da própria interface.</p>
+              <p style="font-weight:700; color:var(--ink);">
+                Não altere toda a estratégia apenas porque apareceu uma mensagem que não faz sentido.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 15 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">15</span>
+              <h3>Organização e nomenclatura das campanhas</h3>
+              <span class="learning-badge">Aprofundamento 15</span>
+            </div>
+            <div class="learning-body">
+              <p>Foi utilizada uma estrutura de nomenclatura para facilitar a gestão: <strong>CMP</strong> = Campanha; <strong>CJ</strong> = Conjunto de anúncios; <strong>CV</strong> = Criativo/anúncio.</p>
+              <p>Uma estrutura organizada facilita muito a leitura da conta. Exemplo conceitual: CMP — Mensagens → CJ 01 — Público X / CJ 02 — Público Y → CV 01 — Pele irritada / CV 02 — 3 sessões / CV 03 — UGC Bia.</p>
+              <p>Evite nomes genéricos como: Anúncio 1, Anúncio 2, Cópia de conjunto. O nome deve permitir identificar rapidamente o teste.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 16 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">16</span>
+              <h3>O pixel não é aquilo que “otimiza sozinho”</h3>
+              <span class="learning-badge">Aprofundamento 16</span>
+            </div>
+            <div class="learning-body">
+              <p>Arthur explicou uma distinção importante. O pixel coleta informações e gera dados. Quem utiliza esses dados para otimização é o sistema de entrega das campanhas.</p>
+              <p>Portanto, não é correto pensar simplesmente: “Vou otimizar o pixel.”</p>
+              <p style="color:#444;">
+                A campanha e o algoritmo utilizam o histórico e os eventos disponíveis para melhorar a distribuição.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 17 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">17</span>
+              <h3>Duplicando conjuntos vencedores</h3>
+              <span class="learning-badge">Aprofundamento 17</span>
+            </div>
+            <div class="learning-body">
+              <p>Uma estratégia utilizada foi identificar um conjunto que estava apresentando: mais resultados; custo menor por lead. Esse conjunto foi duplicado para servir como nova base de teste.</p>
+              <p>Por quê? Quando existe uma estrutura que já está funcionando, é possível preservar parte dela e modificar uma variável. Por exemplo: Conjunto vencedor: Público original → Duplicação: Público Advantage+.</p>
+              <p style="font-weight:700; color:var(--ink);">
+                Assim é possível comparar comportamentos sem começar uma estrutura completamente do zero.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 18 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">18</span>
+              <h3>Público Advantage+</h3>
+              <span class="learning-badge">Aprofundamento 18</span>
+            </div>
+            <div class="learning-body">
+              <p>Foi criada uma variação utilizando público Advantage. É importante não confundir:</p>
+              <p><strong>Público Advantage:</strong> Relacionado à audiência/segmentação.</p>
+              <p><strong>Posicionamentos Advantage:</strong> Relacionado aos locais onde o anúncio será exibido. Exemplos de posicionamento: Instagram; Facebook; Stories; Feed; Reels etc. São conceitos diferentes.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 19 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">19</span>
+              <h3>Pequena amostra não permite conclusões definitivas</h3>
+              <span class="learning-badge">Aprofundamento 19</span>
+            </div>
+            <div class="learning-body">
+              <p>Durante a análise, foram citados: 10 leads; 2 fechamentos. Isso representaria uma conversão aproximada de 20%. Porém Arthur ressaltou que ainda existe uma amostra pequena.</p>
+              <p>Isso é fundamental. Não tome grandes decisões baseado em 3 leads, 5 leads ou 10 leads.</p>
+              <p style="font-weight:800; color:var(--ink);">
+                Quanto maior o volume de dados, maior a segurança para identificar padrões.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 20 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">20</span>
+              <h3>Atualização de criativos</h3>
+              <span class="learning-badge">Aprofundamento 20</span>
+            </div>
+            <div class="learning-body">
+              <p>Novos criativos foram adicionados ao conjunto. Entre os temas trabalhados estavam: pele irritada após uso de lâmina; três sessões; UGC; vídeos com diferentes pessoas; novas chamadas para ação.</p>
+              <p style="color:#444;">
+                A orientação foi substituir criativos antigos, ajustar seus nomes e manter organização para posteriormente identificar qual mensagem gera maior resultado.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 21 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">21</span>
+              <h3>Criativo é um dos principais fatores do custo</h3>
+              <span class="learning-badge">Aprofundamento 21</span>
+            </div>
+            <div class="learning-body">
+              <p>Uma das ideias mais importantes da aula foi: <strong>O criativo influencia fortemente o custo da campanha.</strong></p>
+              <p>Uma estrutura de campanha razoável com um ótimo criativo pode apresentar resultados melhores do que uma estrutura extremamente complexa com uma peça fraca.</p>
+              <p>Por isso o gestor precisa desenvolver percepção para identificar: criativo caro; criativo saturado; mensagem que não gera atenção; ângulo que merece um novo teste.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 22 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">22</span>
+              <h3>22. Desenvolvendo “feeling” de otimização</h3>
+              <span class="learning-badge">Aprofundamento 22</span>
+            </div>
+            <div class="learning-body">
+              <p>O objetivo não é apenas decorar métricas. Com experiência, o gestor começa a perceber padrões. Exemplo: <em>“Esse criativo começou a ficar caro.”</em></p>
+              <p>A próxima pergunta é: <em>“O que posso testar?”</em> Possibilidades: novo gancho; nova pessoa; nova legenda; nova dor; nova promessa; campanha de reconhecimento; novo público.</p>
+              <p style="font-weight:700; color:var(--ink);">
+                O desenvolvimento desse senso de análise vem da combinação entre: dados + repetição + testes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Detalhe 23 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">23</span>
+              <h3>Variações de legenda</h3>
+              <span class="learning-badge">Aprofundamento 23</span>
+            </div>
+            <div class="learning-body">
+              <p>Não é necessário utilizar sempre a mesma copy. Um mesmo criativo pode receber diferentes contextos.</p>
+              <p>Exemplo: Criativo relacionado à irritação causada por lâmina. Uma variação da legenda pode focar em parar de usar gilete. Outra pode trabalhar irritação. Outra: conforto da pele.</p>
+              <p style="color:#444;">O objetivo é testar ângulos diferentes para a mesma oferta.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 24, 25, 26, 27 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">24</span>
+              <h3>Não copie métricas de outros modelos de negócio</h3>
+              <span class="learning-badge">Negócios Locais vs Infoprodutos</span>
+            </div>
+            <div class="learning-body">
+              <p>Arthur destacou um erro comum de cursos genéricos de tráfego. Nem todas as campanhas são analisadas da mesma maneira. Uma campanha para negócio local possui contexto diferente de infoproduto. Com maior orçamento, a estratégia também pode mudar. A base de conhecimento permanece útil, mas novas métricas e estruturas entram na análise.</p>
+              <p><strong>Negócios locais:</strong> Há forte preocupação com métricas como: custo por mensagem; custo por lead; quantidade de contatos; taxa de fechamento; faturamento; margem.</p>
+              <p><strong>Infoprodutos:</strong> Outras métricas podem assumir importância maior e a arquitetura da campanha tende a ser diferente. Portanto: não tente aplicar uma regra universal a qualquer operação.</p>
+              <p><strong>Otimização para pequenos negócios:</strong> O método ensinado nesta etapa está direcionado principalmente a: negócios locais; orçamento mais limitado; campanhas de mensagens; campanhas de reconhecimento; geração de leads local. Com aumento significativo de verba, novas técnicas e controles podem ser necessários. Arthur destacou, porém, que a base aprendida continuará sendo útil.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe 28 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">28</span>
+              <h3>Otimização pelo computador x celular</h3>
+              <span class="learning-badge">Aprofundamento 28</span>
+            </div>
+            <div class="learning-body">
+              <p>É possível realizar algumas ações pelo celular. Porém, para otimização mais completa, foi recomendada a utilização do Gerenciador de Anúncios no computador.</p>
+              <p>A interface mobile possui menos recursos e pode limitar algumas configurações. Para alterações rápidas, o celular pode ajudar. Para gestão e análise mais completas: <strong>prefira desktop.</strong></p>
+            </div>
+          </article>
+
+          <!-- Detalhe 29 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">29</span>
+              <h3>Processo utilizado para otimizar os conjuntos</h3>
+              <span class="learning-badge">Aprofundamento 29</span>
+            </div>
+            <div class="learning-body">
+              <p>Na aula, o processo seguiu aproximadamente esta lógica:</p>
+              <ol style="margin:8px 0 14px 24px; line-height:1.9; color:var(--ink);">
+                <li>Identificar conjuntos mais caros.</li>
+                <li>Identificar o conjunto com melhor resultado/custo.</li>
+                <li>Desativar estruturas com desempenho inferior quando justificável.</li>
+                <li>Manter a estrutura vencedora ativa.</li>
+                <li>Duplicar a melhor estrutura para criar uma nova variação.</li>
+                <li>Testar público Advantage.</li>
+                <li>Adicionar novos criativos.</li>
+                <li>Renomear corretamente todos os elementos.</li>
+                <li>Publicar.</li>
+                <li>Aguardar novos dados antes de tomar a próxima decisão.</li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- Detalhe 30, 31, 32 -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">30</span>
+              <h3>Estrutura de teste, Continuidade e Próxima etapa</h3>
+              <span class="learning-badge">Aprofundamento 30–32</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Estrutura de teste utilizada ao final:</strong> Ao final da otimização, a ideia foi manter: um conjunto com público maior/estrutura já validada; uma nova variação utilizando público Advantage; criativos diferentes para gerar novos dados. Dois conjuntos com custos mais altos foram desativados. O objetivo não é manter tudo ativo indefinidamente. A verba precisa ser direcionada de forma coerente com aquilo que os dados estão mostrando.</p>
+              <p><strong>Campanhas precisam de continuidade:</strong> Campanhas de reconhecimento não devem necessariamente ser ligadas e desligadas rapidamente. Arthur orientou manter continuidade para alimentar constantemente o topo do funil. Em estratégias de marca, alguns resultados aparecem ao longo de períodos maiores. Foi discutida uma visão de médio e longo prazo, incluindo meses de exposição e formação de público.</p>
+              <p><strong>Próxima etapa do aprendizado:</strong> Nas aulas seguintes, o foco será aumentar progressivamente a autonomia da aluna. A ideia é sair de “Arthur me diz onde clicar” para “Eu analiso a campanha, identifico o problema e sei qual teste realizar”. O aprendizado de tráfego pago acontece principalmente por: <em>configurar → observar → analisar → otimizar → observar novamente.</em></p>
+            </div>
+          </article>
+
+          <!-- Detalhe Checklist Prático -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">✓</span>
+              <h3>Checklist prático da aula</h3>
+              <span class="learning-badge">Aprofundamento Prático</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-weight:700; color:var(--ink); margin-bottom:12px;">Ao analisar uma campanha de negócio local, consulte:</p>
+              <ul style="margin:0 0 16px 20px; line-height:1.9; color:var(--ink);">
+                <li>Quantos leads entraram?</li>
+                <li>Quantos fecharam?</li>
+                <li>Qual é a taxa de conversão?</li>
+                <li>Qual é o ticket?</li>
+                <li>Qual é a margem?</li>
+                <li>Qual conjunto tem melhor custo?</li>
+                <li>Qual conjunto está caro?</li>
+                <li>Qual criativo está puxando resultado?</li>
+                <li>Há volume suficiente para tomar uma decisão?</li>
+                <li>É necessário gerar mais topo de funil?</li>
+                <li>Existe público de vídeo/interação suficiente para retargeting?</li>
+                <li>Existem novos criativos para testar?</li>
+                <li>Os conjuntos e anúncios estão organizados por nome?</li>
+                <li>A campanha está sendo analisada de acordo com o modelo de negócio?</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Detalhe Tarefas Após a Aula -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">T</span>
+              <h3>Tarefas após a aula</h3>
+              <span class="learning-badge">Aprofundamento de Tarefas</span>
+            </div>
+            <div class="learning-body">
+              <p><strong>Materiais e organização</strong></p>
+              <p><strong>Arthur:</strong> Disponibilizar a gravação da aula no sistema após o processamento; Enviar o link atualizado para acesso ao conteúdo; Compartilhar o Drive necessário para os materiais.</p>
+              <p><strong>Criativos</strong></p>
+              <p><strong>Anny Carolinny:</strong> Disponibilizar e organizar os novos criativos; Editar o vídeo de reconhecimento removendo o CTA inadequado; Atualizar criativos dos conjuntos conforme os novos arquivos forem entregues; Substituir materiais antigos pelas versões com CTA quando aplicável.</p>
+              <p><strong>Bia:</strong> Enviar a versão editada do vídeo conforme orientação; Disponibilizar material com chamada para ação quando necessário.</p>
+              <p><strong>Anne:</strong> Disponibilizar as versões solicitadas dos vídeos e CTAs.</p>
+              <p><strong>Campanhas:</strong> Manter a campanha de reconhecimento ativa conforme a estratégia definida; Acompanhar a formação dos públicos personalizados; Monitorar custo por lead/mensagem; Avaliar os novos conjuntos somente depois de acumular dados suficientes; Na próxima análise, verificar o desempenho do público Advantage e dos novos criativos.</p>
+            </div>
+          </article>
+
+          <!-- Detalhe Resumo Central -->
+          <article class="learning-card reveal">
+            <div class="learning-header">
+              <span class="learning-index">R</span>
+              <h3>Resumo central da aula</h3>
+              <span class="learning-badge">Aprofundamento Geral</span>
+            </div>
+            <div class="learning-body">
+              <p style="font-size:1.1rem; font-weight:700; color:var(--ink);">
+                A principal lição desta etapa é que otimização não consiste apenas em reduzir o custo de uma campanha.
+              </p>
+              <p>É necessário enxergar o sistema inteiro: <strong>Demanda → Criativo → Público → Campanha → Lead → Comercial → Fechamento → Margem.</strong></p>
+              <p>Quando há poucos leads, até uma boa taxa de conversão pode produzir poucos clientes.</p>
+              <div class="callout-box" style="margin-top:14px; background:#fff; border-left:4px solid var(--orange);">
+                <p style="margin:0; font-weight:800; color:var(--ink);">
+                  Por isso, neste caso, a estratégia foi simultaneamente: aumentar o topo do funil + criar novos públicos + testar novos criativos + preservar os conjuntos de melhor desempenho + continuar coletando dados.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center; margin: 40px 0 20px;">
+          <button type="button" class="button primary" data-study-mode="objetivo">
+            <span>← Voltar ao Estudo Objetivo da Aula</span>
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Aulas Selection Modal -->
+  <div class="aulas-modal-overlay" id="aulasModal" role="dialog" aria-modal="true" aria-labelledby="aulasModalTitle" hidden>
+    <div class="aulas-modal-backdrop" data-close-aulas></div>
+    <div class="aulas-modal-container">
+      <div class="aulas-modal-header">
+        <div>
+          <p class="modal-eyebrow">MENTORIA DE TRÁFEGO PAGO • LEVITALLI</p>
+          <h2 id="aulasModalTitle">Selecione a Aula</h2>
+          <p class="modal-sub">Escolha qual conteúdo da mentoria você deseja estudar agora:</p>
+        </div>
+        <button class="aulas-modal-close" data-close-aulas aria-label="Fechar seleção de aulas">✕</button>
+      </div>
+
+      <div class="aulas-grid">
+        <!-- Aula 01 -->
+        <article class="aula-card">
+          <div>
+            <div class="aula-card-badge">AULA 01 • DISPONÍVEL</div>
+            <h3>Tráfego que Vira Decisão</h3>
+            <p class="aula-desc">39 aprendizados fundamentais: princípios centrais, isolamento de variáveis, diagnóstico cruzado de métricas (CTR, CPM, frequência, CPL) e alinhamento direto com o fechamento comercial.</p>
+            <div class="aula-topics">
+              <span>10 Princípios</span>
+              <span>Estrutura</span>
+              <span>Métricas & Diagnóstico</span>
+              <span>39 Aprendizados</span>
+              <span>Exercícios</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span></span>
+            <a href="index.html" class="button primary small"><span>Estudar Aula 1 →</span></a>
+          </div>
+        </article>
+
+        <!-- Aula 02 -->
+        <article class="aula-card">
+          <div>
+            <div class="aula-card-badge">AULA 02 • DISPONÍVEL</div>
+            <h3>2 — Criativos</h3>
+            <p class="aula-desc">Otimização sem mexer na estrutura, qualidade de leads reais vs CPL, diagnóstico detalhado da campanha, pesquisa na Biblioteca de Anúncios, modelagem, UGC e ElevenLabs (IA).</p>
+            <div class="aula-topics">
+              <span>O que é Otimizar</span>
+              <span>Qualidade dos Leads</span>
+              <span>Diagnóstico Real</span>
+              <span>Modelagem de Anúncios</span>
+              <span>UGC & ElevenLabs (IA)</span>
+              <span>Tarefas</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span></span>
+            <a href="aula-02.html" class="button primary small"><span>Estudar Aula 2 →</span></a>
+          </div>
+        </article>
+
+        <!-- Aula 03 -->
+        <article class="aula-card is-current">
+          <div>
+            <div class="aula-card-badge highlight"><span class="dot-live"></span> AULA 03 • ATUAL</div>
+            <h3>3 — Otimização</h3>
+            <p class="aula-desc">Diagnóstico comercial antes do tráfego, criativo e confiança, campanhas de reconhecimento vs mensagens para negócios locais, públicos, frequência, Advantage e checklist de decisão.</p>
+            <div class="aula-topics">
+              <span>Estudo Objetivo</span>
+              <span>Estudo Detalhado</span>
+              <span>Comercial Primeiro</span>
+              <span>Topo de Funil</span>
+              <span>Reconhecimento x Mensagens</span>
+              <span>Checklist</span>
+            </div>
+          </div>
+          <div class="aula-action">
+            <span class="current-label">● Você está aqui</span>
+            <button type="button" class="button outline small" data-close-aulas><span>Continuar Lendo</span></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactivity script -->
+  <script src="script.js"></script>
+</body>
+</html>

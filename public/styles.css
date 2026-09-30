@@ -1641,3 +1641,114 @@ section {
     transform: rotate(90deg);
   }
 }
+
+/* Study Mode Switcher Bar & Highlights */
+.study-mode-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(243, 154, 22, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 16px 24px;
+  margin: 28px 0;
+  flex-wrap: wrap;
+}
+
+.study-mode-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.study-mode-info .mode-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--orange);
+}
+
+.study-mode-info .mode-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0;
+}
+
+.study-mode-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.highlight-detailed-btn {
+  background: linear-gradient(135deg, var(--orange) 0%, #e08500 100%);
+  color: var(--ink) !important;
+  font-weight: 800 !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  border: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 20px rgba(243, 154, 22, 0.35) !important;
+  transition: all 0.25s ease !important;
+  font-size: 0.95rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  text-decoration: none;
+}
+
+.highlight-detailed-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(243, 154, 22, 0.5) !important;
+  background: linear-gradient(135deg, var(--orange-light) 0%, var(--orange) 100%);
+}
+
+.study-segmented-controls {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+
+.study-segment-btn {
+  background: transparent;
+  border: none;
+  color: #c4beaf;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.study-segment-btn.active {
+  background: var(--orange);
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.study-segment-btn:hover:not(.active) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.study-view-container {
+  display: block;
+}
+
+.study-view-container[hidden] {
+  display: none !important;
+}
